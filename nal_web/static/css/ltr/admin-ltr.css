@@ -1,0 +1,22 @@
+{% load static %}
+
+@font-face {
+  font-family: "Vazir";
+  src: url('../../fonts/Vazir/Vazir.eot?1559033547');
+  src: url('../../fonts/Vazir/Vazir.eot?&1559033547#iefix') format('embedded-opentype'), url('../../fonts/Vazir/Vazir.woff2?1559033548') format('woff2'), url('../../fonts/Vazir/Vazir.woff?1559033547') format('woff'), url('../../fonts/Vazir/Vazir.ttf?1559033547') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#header {
+  background: #34495e;
+}
+
+body {
+  color: #73879c;
+  background: #fff;
+  font-family: Vazir, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.471;
+}

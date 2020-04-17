@@ -1,0 +1,33 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('intro', views.intro, name='intro'),
+    path('chap1_sec1', views.chap1_sec1, name='chap1_sec1'),
+    path('chap1_sec2', views.chap1_sec2, name='chap1_sec2'),
+    path('chap1_sec3', views.chap1_sec3, name='chap1_sec3'),
+    path('chap1_example1', views.chap1_example1, name='chap1_example1'),
+    path('chap1_example2', views.chap1_example2, name='chap1_example2'),
+    path('chap1_example3', views.chap1_example3, name='chap1_example3'),
+    path('chap1_example4', views.chap1_example4, name='chap1_example4'),
+    path('chap1_example5', views.chap1_example5, name='chap1_example5'),
+    path('chap1_example6', views.chap1_example6, name='chap1_example6'),
+    path('chap1_example7', views.chap1_example7, name='chap1_example7'),
+    path('chap1_example8', views.chap1_example8, name='chap1_example8'),
+    path('chap2_sec1', views.chap2_sec1, name='chap2_sec1'),
+    path('chap2_sec2', views.chap2_sec2, name='chap2_sec2'),
+    path('chap2_sec3', views.chap2_sec3, name='chap2_sec3'),
+    path('chap2_sec4', views.chap2_sec4, name='chap2_sec4'),
+    path('chap2_sec5', views.chap2_sec5, name='chap2_sec5'),
+    path('chap2_sec6', views.chap2_sec6, name='chap2_sec6'),
+    path('chap2_sec7', views.chap2_sec7, name='chap2_sec7'),
+    path('chap2_example1', views.chap2_example1, name='chap2_example1'),
+    path('chap2_example2', views.chap2_example2, name='chap2_example2'),
+    path('chap2_example3', views.chap2_example3, name='chap2_example3'),
+    path('chap2_example4', views.chap2_example4, name='chap2_example4'),
+    path('chap2_example5', views.chap2_example5, name='chap2_example5'),
+    path('chap2_example6', views.chap2_example6, name='chap2_example6'),
+    path('chap2_example7', views.chap2_example7, name='chap2_example7'),
+    path('chap2_example8', views.chap2_example8, name='chap2_example8'),
+    path('chap2_example9', views.chap2_example9, name='chap2_example9'),
+]

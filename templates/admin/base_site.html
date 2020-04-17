@@ -1,0 +1,14 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+
+{% block branding %}
+    <h1 id="head">
+        <img src="{% static 'images/nal.png' %}" alt="NAL" height="50" width="50" class="brand_img">
+        سامانه آموزشی محاسبات عددی
+    </h1>
+{% endblock %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" href="{% static 'css/ltr/admin-ltr.css' %}">
+{% endblock %}
