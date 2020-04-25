@@ -112,3 +112,7 @@ def chap2_example8(request):
 
 def chap2_example9(request):
     return render(request, 'lessons/Chapter2-Example9.html')
+
+
+def chap3_sec1(request):
+    return render(request, 'lessons/chap3_sec1.html')
