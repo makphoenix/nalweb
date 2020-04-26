@@ -3,11 +3,6 @@
 
 {% block content %}
 
-    <script>
-        $('#w3-include-html').load("{% include 'lessons/Chapter03-Section01.htm' %}");
-    </script>
-
-
     <br/>
         <div class="panel panel-primary">
             <meta charset="UTF-8">
@@ -15,7 +10,7 @@
                 <h3 class="panel-title"></h3>
             </div>
             <div class="panel-body" style="max-height: 600px; overflow: auto;">
-                <div id="w3-include-html"></div>
+                <div w3-include-html="{% include 'lessons/Chapter03-Section01.htm' %}"></div>
             </div>
             <div class="panel-footer">
             </div>
