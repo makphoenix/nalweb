@@ -31,4 +31,5 @@ urlpatterns = [
     path('chap2_example8', views.chap2_example8, name='chap2_example8'),
     path('chap2_example9', views.chap2_example9, name='chap2_example9'),
     path('chap3_sec1', views.chap3_sec1, name='chap3_sec1'),
+    path('chap3_sec2', views.chap3_sec2, name='chap3_sec2'),
 ]

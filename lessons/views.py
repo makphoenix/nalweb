@@ -145,3 +145,8 @@ def chap2_example9(request):
 @login_required
 def chap3_sec1(request):
     return render(request, 'lessons/chap3_sec1.html')
+
+
+@login_required
+def chap3_sec2(request):
+    return render(request, 'lessons/chap3_sec2.html')
