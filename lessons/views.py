@@ -150,3 +150,23 @@ def chap3_sec1(request):
 @login_required
 def chap3_sec2(request):
     return render(request, 'lessons/chap3_sec2.html')
+
+
+@login_required
+def chap3_example1(request):
+    return render(request, 'lessons/Chapter3-Example1.html')
+
+
+@login_required
+def chap3_example2(request):
+    return render(request, 'lessons/Chapter3-Example2.html')
+
+
+@login_required
+def chap3_example3(request):
+    return render(request, 'lessons/Chapter3-Example3.html')
+
+
+@login_required
+def chap3_example4(request):
+    return render(request, 'lessons/Chapter3-Example4.html')
