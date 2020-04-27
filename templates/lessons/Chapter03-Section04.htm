@@ -1,51 +1,79 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Titr";
-	panose-1:0 0 7 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:#92D050;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Titr";
+            panose-1: 0 0 7 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            line-height: 115%;
+            font-size: 12.0pt;
+            font-family: "Times New Roman", serif;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: #92D050;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -53,132 +81,153 @@ div.WordSection1
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
 unicode-bidi:embed'><b><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>تفاضلات پسرو و پیشرو</span></b></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>روشهای لاگرانژ و تفاضلات تقسیم شده نیوتن در حالت کلی
 برای نقاط </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=102 height=25
-src="Chapter03-Section04_files/image001.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> چه متساوی الفاصله باشند، چه نباشند، چند جمله ای درونیاب را به
+                                  src="{% static 'images/Chapter03-Section04_files/image001.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> چه متساوی الفاصله باشند، چه نباشند، چند جمله ای درونیاب را به
 دست می دهند. اما وقتی </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=16 height=25
-src="Chapter03-Section04_files/image002.gif"></span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>ها متساوی
+                                  src="{% static 'images/Chapter03-Section04_files/image002.gif' %}"></span><span lang=FA
+                                                                                            style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>ها متساوی
 الفاصله باشند، فرمولهای ساده تری موجودند که در این قسمت آنها را به دست می
 آوریم. با معرفی نماد </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=106 height=25
-src="Chapter03-Section04_files/image003.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> به ازاء  </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section04_files/image003.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> به ازاء  </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=137 height=25
-src="Chapter03-Section04_files/image004.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section04_files/image004.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=95 height=25
-src="Chapter03-Section04_files/image005.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  تفاضل های </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section04_files/image005.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  تفاضل های </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=49 height=25
-src="Chapter03-Section04_files/image006.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  را می توان به صورت  </span><span dir=LTR></span><span lang=FA
-dir=LTR style='font-size:14.0pt;line-height:115%'><span dir=LTR></span> </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section04_files/image006.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  را می توان به صورت  </span><span dir=LTR></span><span lang=FA
+                                                                                   dir=LTR
+                                                                                   style='font-size:14.0pt;line-height:115%'><span
+            dir=LTR></span> </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=137 height=25
-src="Chapter03-Section04_files/image007.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> نوشت، در نتیجه :</span></p>
+                                  src="{% static 'images/Chapter03-Section04_files/image007.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> نوشت، در نتیجه :</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=590 height=51 src="Chapter03-Section04_files/image008.gif"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=590 height=51 src="{% static 'images/Chapter03-Section04_files/image008.gif' %}"></span></p>
 
-<p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
 21.3pt;margin-bottom:10.0pt;margin-left:27.15pt;text-align:center'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=602 height=90 src="Chapter03-Section04_files/image009.gif"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=602 height=90 src="{% static 'images/Chapter03-Section04_files/image009.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>با استفاده از نماد ضریب دوجمله ای یعنی</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=329 height=51 src="Chapter03-Section04_files/image010.gif"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=329 height=51 src="{% static 'images/Chapter03-Section04_files/image010.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>می توان  را بصورت فشرده زیر بیان کرد:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=261 height=65 src="Chapter03-Section04_files/image011.gif"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=261 height=65 src="{% static 'images/Chapter03-Section04_files/image011.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>عملگر تفاضل پیشرو </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.5pt'><img width=13 height=29
-src="Chapter03-Section04_files/image012.gif"></span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> را بصورت زیر
+                                  src="{% static 'images/Chapter03-Section04_files/image012.gif' %}"></span>
+                                  <span lang=FA
+                                                                                     style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> را بصورت زیر
 تعریف می کنیم:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=262 height=49 src="Chapter03-Section04_files/image013.gif"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=262 height=49 src="{% static 'images/Chapter03-Section04_files/image013.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>با این تعریف می توان چند جمله ای درونیاب را به فرم زیر
 نوشت ( که به آن چند جمله ای تفاضلات پیشرو گویند):</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=407 height=65 src="Chapter03-Section04_files/image014.gif"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=407 height=65 src="{% static 'images/Chapter03-Section04_files/image014.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify;direction:rtl;
-unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Titr"'>مثال 7:</span></p>
+    <br>
+    <!-- کلید مثال ۷ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap3_example7' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۷</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify;direction:rtl;
-unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Titr"'>مثال 8:</span></p>
+    <br>
+    <!-- کلید مثال ۸ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap3_example8' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۸</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify;direction:rtl;
-unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Titr"'>مثال 9:</span></p>
+    <br>
+    <!-- کلید مثال ۹ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap3_example9' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۹</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>&nbsp;</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>برای تقریب مقادیری که به ابتدای جدول نزدیک هستند،
@@ -186,57 +235,64 @@ font-family:"B Nazanin"'>برای تقریب مقادیری که به ابتدا
 تفاضلات پیشرو استفاده می کنیم. برای تقریب یک مقدار وقتی به انتهای مقادیر در
 جدول نزدیک است مجدداً مایلیم از داده های مربوط به نقاط نزدیک آن حداکثر استفاده
 را بکنیم؛ به این دلیل به جای استفاده از اعداد سطر اول جدول </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=240 height=25
-src="Chapter03-Section04_files/image015.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> از اعداد آخر سطر استفاده می کنیم و به این چندجمله ای تفاضلات
+                                  src="{% static 'images/Chapter03-Section04_files/image015.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> از اعداد آخر سطر استفاده می کنیم و به این چندجمله ای تفاضلات
 پسرو گفته می شود.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>اگر عملگر تفاضل پسرو </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.5pt'><img width=13 height=29
-src="Chapter03-Section04_files/image016.gif"></span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> را بصورت زیر
+                                  src="{% static 'images/Chapter03-Section04_files/image016.gif' %}"></span><span lang=FA
+                                                                                            style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> را بصورت زیر
 تعریف کنیم:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=417 height=49 src="Chapter03-Section04_files/image017.gif"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=417 height=49 src="{% static 'images/Chapter03-Section04_files/image017.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>آنگاه </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=38 height=25
-src="Chapter03-Section04_files/image018.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> را می توان بصورت زیر نوشت:</span></p>
+                                  src="{% static 'images/Chapter03-Section04_files/image018.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> را می توان بصورت زیر نوشت:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=602 height=94 src="Chapter03-Section04_files/image019.gif"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=602 height=94 src="{% static 'images/Chapter03-Section04_files/image019.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>که در آن </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=96 height=25
-src="Chapter03-Section04_files/image020.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> .</span></p>
+                                  src="{% static 'images/Chapter03-Section04_files/image020.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> .</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+
+    <br>
+    <!-- کلید مثال ۱۰ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
-unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Titr"'>مثال 10:</span></p>
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap3_example10' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۱۰</a>
+        </span>
+    </p>
 
 </div>
 

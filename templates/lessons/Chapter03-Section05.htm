@@ -1,51 +1,79 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Titr";
-	panose-1:0 0 7 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:#00B0F0;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Titr";
+            panose-1: 0 0 7 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            line-height: 115%;
+            font-size: 12.0pt;
+            font-family: "Times New Roman", serif;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: #00B0F0;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -53,12 +81,12 @@ div.WordSection1
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:right;direction:rtl;
 unicode-bidi:embed'><b><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>خطای چند جمله ای درونیاب:</span></b></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>هنگامی که برای تعیین مقادیر یک تابع از چند جمله ای
@@ -66,112 +94,124 @@ font-family:"B Nazanin"'>هنگامی که برای تعیین مقادیر یک
 متأسفانه برآورد دقیق خطا امکان پذیر نیست، ولی می توان حدی برای خطا تعیین کرد.
 قضیه زیر این مطلب را بررسی می کند.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;direction:rtl;
 unicode-bidi:embed'><b><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>قضیه:</span></b><span lang=FA style='font-size:16.0pt;
 line-height:115%;font-family:"B Nazanin"'> اگر </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=94 height=25
-src="Chapter03-Section05_files/image001.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  نقاط مجزایی در بازه </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image001.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  نقاط مجزایی در بازه </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=42 height=25
-src="Chapter03-Section05_files/image002.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> باشند و اگر</span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image002.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> باشند و اگر</span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=111 height=26
-src="Chapter03-Section05_files/image003.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> ، آنگاه به ازای هر </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image003.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ، آنگاه به ازای هر </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=74 height=25
-src="Chapter03-Section05_files/image004.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> ، عددی مانند </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image004.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ، عددی مانند </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=18 height=25
-src="Chapter03-Section05_files/image005.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> در </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image005.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> در </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=44 height=25
-src="Chapter03-Section05_files/image006.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> وجود دارد بطوریکه:</span></p>
+                                  src="{% static 'images/Chapter03-Section05_files/image006.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> وجود دارد بطوریکه:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt'><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
-width=523 height=53 src="Chapter03-Section05_files/image007.png"></span></p>
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'><img
+            width=523 height=53 src="{% static 'images/Chapter03-Section05_files/image007.png' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:right;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>که در آن </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=46 height=25
-src="Chapter03-Section05_files/image008.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> چند جمله ای درونیابی است و </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image008.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> چند جمله ای درونیابی است و </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.5pt'><img width=11 height=29
-src="Chapter03-Section05_files/image009.png"></span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> بین </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image009.png' %}"></span><span lang=FA
+                                                                                            style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> بین </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=18 height=25
-src="Chapter03-Section05_files/image010.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image010.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=20 height=25
-src="Chapter03-Section05_files/image011.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> قرار دارد.</span></p>
+                                  src="{% static 'images/Chapter03-Section05_files/image011.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> قرار دارد.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;direction:rtl;
 unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>فرمول فوق کاربرد عملی زیادی ندارد، زیرا در بسیادری از
 موارد مشتق مرتبه </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=44 height=25
-src="Chapter03-Section05_files/image012.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و تابع </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image012.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و تابع </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=76 height=27
-src="Chapter03-Section05_files/image013.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> معلوم نیست. همچنین راهی برای تعیین دقیق مقدار عدد </span><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;position:
+                                  src="{% static 'images/Chapter03-Section05_files/image013.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> معلوم نیست. همچنین راهی برای تعیین دقیق مقدار عدد </span><span style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;position:
 relative;top:6.5pt'><img width=11 height=29
-src="Chapter03-Section05_files/image009.png"></span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> وجود ندارد.
+                         src="{% static 'images/Chapter03-Section05_files/image009.png' %}"></span><span lang=FA
+                                                                                   style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> وجود ندارد.
 ولی اگر در یک بازه بیشترین مقدار </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:7.0pt'><img width=88 height=29
-src="Chapter03-Section05_files/image014.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> در دست باشد، با استفاده از رابطه </span><span
-style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+                                  src="{% static 'images/Chapter03-Section05_files/image014.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> در دست باشد، با استفاده از رابطه </span><span
+            style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
 position:relative;top:6.0pt'><img width=221 height=25
-src="Chapter03-Section05_files/image015.png"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  می توان حدی برای خطای درونیابی در آن فاصله بدست آورد.</span></p>
+                                  src="{% static 'images/Chapter03-Section05_files/image015.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  می توان حدی برای خطای درونیابی در آن فاصله بدست آورد.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;direction:rtl;
-unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Titr"'>مثال 11:</span></p>
+    <br>
+    <!-- کلید مثال ۱۱ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap3_example11' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۱۱</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;direction:rtl;
-unicode-bidi:embed'><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Titr"'>مثال 12:</span></p>
+    <br>
+    <!-- کلید مثال ۱۲ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap3_example12' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۱۲</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;direction:rtl;
 unicode-bidi:embed'><span dir=LTR style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
 

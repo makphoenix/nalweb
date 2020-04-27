@@ -153,6 +153,21 @@ def chap3_sec2(request):
 
 
 @login_required
+def chap3_sec3(request):
+    return render(request, 'lessons/chap3_sec3.html')
+
+
+@login_required
+def chap3_sec4(request):
+    return render(request, 'lessons/chap3_sec4.html')
+
+
+@login_required
+def chap3_sec5(request):
+    return render(request, 'lessons/chap3_sec5.html')
+
+
+@login_required
 def chap3_example1(request):
     return render(request, 'lessons/Chapter3-Example1.html')
 
@@ -170,3 +185,43 @@ def chap3_example3(request):
 @login_required
 def chap3_example4(request):
     return render(request, 'lessons/Chapter3-Example4.html')
+
+
+@login_required
+def chap3_example5(request):
+    return render(request, 'lessons/Chapter3-Example5.html')
+
+
+@login_required
+def chap3_example6(request):
+    return render(request, 'lessons/Chapter3-Example6.html')
+
+
+@login_required
+def chap3_example7(request):
+    return render(request, 'lessons/Chapter3-Example7.html')
+
+
+@login_required
+def chap3_example8(request):
+    return render(request, 'lessons/Chapter3-Example8.html')
+
+
+@login_required
+def chap3_example9(request):
+    return render(request, 'lessons/Chapter3-Example9.html')
+
+
+@login_required
+def chap3_example10(request):
+    return render(request, 'lessons/Chapter3-Example10.html')
+
+
+@login_required
+def chap3_example11(request):
+    return render(request, 'lessons/Chapter3-Example11.html')
+
+
+@login_required
+def chap3_example12(request):
+    return render(request, 'lessons/Chapter3-Example12.html')
