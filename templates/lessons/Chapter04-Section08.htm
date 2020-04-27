@@ -1,57 +1,87 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Titr";
-	panose-1:0 0 7 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:#CCC0D9;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Titr";
+            panose-1: 0 0 7 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: #CCC0D9;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -59,341 +89,351 @@ div.WordSection1
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><b><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش نیوتن </span></b><b><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"Times New Roman",serif'>–</span></b><b><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> کاتس</span></b></p>
+                                                                    style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش نیوتن </span></b><b><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"Times New Roman",serif'>–</span></b><b><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> کاتس</span></b></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>در این روش
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>در این روش
 نقاط </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=86 height=24
-src="Chapter04-Section08_files/image001.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> معلوم فرض می شوند، مثلا متساوی الفاصله و به صورت زیر:</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image001.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> معلوم فرض می شوند، مثلا متساوی الفاصله و به صورت زیر:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=264 height=24 src="Chapter04-Section08_files/image002.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=264 height=24 src="{% static 'images/Chapter04-Section08_files/image002.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بنابراین در
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بنابراین در
 رابطه (16)  مجهولات عبارتند از </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=41 height=24
-src="Chapter04-Section08_files/image003.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> ضریب </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image003.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ضریب </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=92 height=24
-src="Chapter04-Section08_files/image004.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> .</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image004.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> .</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>برای بدست
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>برای بدست
 آوردن این ضرائب فرض می کنیم در رابطه(..) برای توابع زیر مقدار خطا صفر است:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=155 height=24 src="Chapter04-Section08_files/image005.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=155 height=24 src="{% static 'images/Chapter04-Section08_files/image005.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>یعنی ضرایب
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>یعنی ضرایب
 مجهول </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=20 height=24
-src="Chapter04-Section08_files/image006.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> را طوری پیدا می کنیم که خطای عبارت </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image006.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> را طوری پیدا می کنیم که خطای عبارت </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=100 height=24
-src="Chapter04-Section08_files/image007.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> به عنوان تقریب </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image007.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> به عنوان تقریب </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.5pt'><img width=82 height=32
-src="Chapter04-Section08_files/image008.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> برای چندجمله ایهای تا درجه </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image008.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> برای چندجمله ایهای تا درجه </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=10 height=24
-src="Chapter04-Section08_files/image009.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> صفر باشد. هرگاه برای راحتی قرار دهیم </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image009.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> صفر باشد. هرگاه برای راحتی قرار دهیم </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=49 height=24
-src="Chapter04-Section08_files/image010.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> ، در این صورت فرمول قاعده چهار نقطه ای به صورت زیر بیان می شود:</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image010.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ، در این صورت فرمول قاعده چهار نقطه ای به صورت زیر بیان می شود:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=339 height=61 src="Chapter04-Section08_files/image011.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=339 height=61 src="{% static 'images/Chapter04-Section08_files/image011.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>که در آن </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>که در آن </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=60 height=24
-src="Chapter04-Section08_files/image012.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> ، یعنی:</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image012.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ، یعنی:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=299 height=24 src="Chapter04-Section08_files/image013.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=299 height=24 src="{% static 'images/Chapter04-Section08_files/image013.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>برای بدست
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>برای بدست
 آوردن ضرائب </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=19 height=24
-src="Chapter04-Section08_files/image014.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> تا </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image014.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> تا </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=19 height=24
-src="Chapter04-Section08_files/image015.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> برای محاسبه انتگرال (17)  مقدار </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=12 height=24 src="Chapter04-Section08_files/image016.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+                                  src="{% static 'images/Chapter04-Section08_files/image015.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> برای محاسبه انتگرال (17)  مقدار </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=12 height=24 src="{% static 'images/Chapter04-Section08_files/image016.gif' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'><span dir=RTL></span> را برای توابع </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=131 height=24
-src="Chapter04-Section08_files/image017.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  برابر صفر قرار می دهیم.</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image017.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  برابر صفر قرار می دهیم.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>هرگاه </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>هرگاه </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=67 height=24
-src="Chapter04-Section08_files/image018.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> ، در اینصورت:</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image018.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ، در اینصورت:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=196 height=50 src="Chapter04-Section08_files/image019.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=196 height=50 src="{% static 'images/Chapter04-Section08_files/image019.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&nbsp;</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&nbsp;</span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>از طرفی برای </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=44 height=24 src="Chapter04-Section08_files/image020.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>از طرفی برای </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=44 height=24 src="{% static 'images/Chapter04-Section08_files/image020.gif' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'><span dir=RTL></span> مقدار سمت راست رابطه (17) عبارت
 است از:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=398 height=61 src="Chapter04-Section08_files/image021.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=398 height=61 src="{% static 'images/Chapter04-Section08_files/image021.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بنابراین برای
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بنابراین برای
 </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=67 height=24
-src="Chapter04-Section08_files/image018.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> معادله زیر نتیجه می شود:</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image018.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> معادله زیر نتیجه می شود:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=254 height=24 src="Chapter04-Section08_files/image022.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=254 height=24 src="{% static 'images/Chapter04-Section08_files/image022.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>به طور مشابه
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>به طور مشابه
 برای </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=67 height=24
-src="Chapter04-Section08_files/image023.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> معادله زیر را خواهیم داشت:</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image023.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> معادله زیر را خواهیم داشت:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=260 height=44 src="Chapter04-Section08_files/image024.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=260 height=44 src="{% static 'images/Chapter04-Section08_files/image024.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>زیرا</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>زیرا</span>
+    </p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=240 height=50 src="Chapter04-Section08_files/image025.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=240 height=50 src="{% static 'images/Chapter04-Section08_files/image025.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>و</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>و</span>
+    </p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=455 height=61 src="Chapter04-Section08_files/image026.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=455 height=61 src="{% static 'images/Chapter04-Section08_files/image026.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>به طور مشابه
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>به طور مشابه
 برای توابع </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=75 height=24
-src="Chapter04-Section08_files/image027.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image027.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=75 height=24
-src="Chapter04-Section08_files/image028.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> معادلات زیر را خواهیم داشت:</span></p>
+                                  src="{% static 'images/Chapter04-Section08_files/image028.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> معادلات زیر را خواهیم داشت:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=496 height=50 src="Chapter04-Section08_files/image029.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=496 height=50 src="{% static 'images/Chapter04-Section08_files/image029.gif' %}"></span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=500 height=50 src="Chapter04-Section08_files/image030.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=500 height=50 src="{% static 'images/Chapter04-Section08_files/image030.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>پس از ساده
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>پس از ساده
 کردن معادلات(18) تا (21) دستگاه معادلات زیر را خواهیم داشت:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=228 height=128 src="Chapter04-Section08_files/image031.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=228 height=128 src="{% static 'images/Chapter04-Section08_files/image031.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>پس از حل
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>پس از حل
 دستگاه خواهیم داشت:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=331 height=43 src="Chapter04-Section08_files/image032.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=331 height=43 src="{% static 'images/Chapter04-Section08_files/image032.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بنابراین
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بنابراین
 فرمول چهار نقطه ای نیوتن </span><span lang=FA style='font-size:16.0pt;
 line-height:115%;font-family:"Times New Roman",serif'>–</span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> کاتس را به
+                                                                    style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> کاتس را به
 صورت زیر خواهیم داشت:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=487 height=50 src="Chapter04-Section08_files/image033.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=487 height=50 src="{% static 'images/Chapter04-Section08_files/image033.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>و با تغییر
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>و با تغییر
 متغیر </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=82 height=24
-src="Chapter04-Section08_files/image034.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> فرمول قاعده چهارنقطه ای(</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image034.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> فرمول قاعده چهارنقطه ای(</span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.0pt'><img width=7 height=32
-src="Chapter04-Section08_files/image035.gif"></span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>سیمپسون)  به
+                                  src="{% static 'images/Chapter04-Section08_files/image035.gif' %}"></span><span lang=FA
+                                                                                            style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>سیمپسون)  به
 صورت زیر خواهد بود:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=280 height=50 src="Chapter04-Section08_files/image036.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=280 height=50 src="{% static 'images/Chapter04-Section08_files/image036.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش فوق الذکر
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش فوق الذکر
 به روش <b>ضرائب مجهول</b> نیز معروف است.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><b><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>نکته 1:</span></b><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> اگر
+                                                                    style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>نکته 1:</span></b><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> اگر
 فاصله </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=39 height=24
-src="Chapter04-Section08_files/image037.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> بزرگ باشد و با تقسیم آن به 3 قسمت </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=10 height=24 src="Chapter04-Section08_files/image038.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+                                  src="{% static 'images/Chapter04-Section08_files/image037.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> بزرگ باشد و با تقسیم آن به 3 قسمت </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=10 height=24 src="{% static 'images/Chapter04-Section08_files/image038.gif' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'><span dir=RTL></span> بزرگی به دست آید، می توان با
 تقسیم کردن این فاصله به </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=20 height=24
-src="Chapter04-Section08_files/image039.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  قسمت و استفاده از رابطه زیر که به رابطه </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section08_files/image039.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  قسمت و استفاده از رابطه زیر که به رابطه </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.0pt'><img width=7 height=32
-src="Chapter04-Section08_files/image035.gif"></span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>سیمپسون مرکب
+                                  src="{% static 'images/Chapter04-Section08_files/image035.gif' %}"></span><span lang=FA
+                                                                                            style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>سیمپسون مرکب
 معروف است، حاصل انتگرال را به دست آورد.</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=574 height=73 src="Chapter04-Section08_files/image040.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=574 height=73 src="{% static 'images/Chapter04-Section08_files/image040.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><b><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>نکته 2:</span></b><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>
+                                                                    style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>نکته 2:</span></b><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>
 ضرایب دستورهای مختلف انتگرال گیری نیوتن </span><span lang=FA style='font-size:
 16.0pt;line-height:115%;font-family:"Times New Roman",serif'>–</span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> کاتس
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> کاتس
 5 نقطه ای یا 6 نقطه ای در جداولی موجود است که می توان آنها را در کتابهای آنالیز
 عددی یافت.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 11:</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 11:</span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 12:</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 12:</span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 13:</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 13:</span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 14:</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 14:</span>
+    </p>
 
 </div>
 

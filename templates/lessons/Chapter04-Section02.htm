@@ -1,108 +1,150 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Titr";
-	panose-1:0 0 7 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:#92D050;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Titr";
+            panose-1: 0 0 7 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: #92D050;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        /* List Definitions */
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -110,179 +152,180 @@ ul
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><b><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>مشتق گیری
+                                                                    style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>مشتق گیری
 عددی</span></b></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>براي تعيين
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>براي تعيين
 مشتق، از چند جمله اي درونياب استفاده مي كنيم. اگر نقاط </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=17 height=24
-src="Chapter04-Section02_files/image001.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section02_files/image001.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=17 height=24
-src="Chapter04-Section02_files/image002.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  و  ... و </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section02_files/image002.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  و  ... و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=18 height=24
-src="Chapter04-Section02_files/image003.gif"></span><span dir=RTL></span><i><span
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> </span></i><span lang=FA style='font-size:16.0pt;line-height:
+                                  src="{% static 'images/Chapter04-Section02_files/image003.gif' %}"></span><span dir=RTL></span><i><span
+            style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> </span></i><span lang=FA style='font-size:16.0pt;line-height:
 115%;font-family:"B Nazanin"'> نقاط متساوي الفاصله با گام </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=10 height=24 src="Chapter04-Section02_files/image004.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+top:5.5pt'>
+        <img width=10 height=24 src="{% static 'images/Chapter04-Section02_files/image004.gif' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'><span dir=RTL></span> باشند با مشتق گيري از چند جمله
 اي درونياب بدست آمده از روش تفاضلات پيشرو نيوتن داريم:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:left;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=530 height=99 src="Chapter04-Section02_files/image005.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=530 height=99 src="{% static 'images/Chapter04-Section02_files/image005.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm'><span lang=FA style='font-size:16.0pt;
 line-height:115%;font-family:"B Nazanin"'>و براي مشتق دوم هم داريم:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:left;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=545 height=99 src="Chapter04-Section02_files/image006.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=545 height=99 src="{% static 'images/Chapter04-Section02_files/image006.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm'><span lang=FA style='font-size:16.0pt;
 line-height:115%;font-family:"B Nazanin"'>هر گاه بخواهيم مشتق اول و دوم را در
 نقاط درونياب محاسبه كنيم، قرار مي‌دهيم: </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=45 height=24
-src="Chapter04-Section02_files/image007.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>.</span></p>
+                                  src="{% static 'images/Chapter04-Section02_files/image007.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بطور معمول
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بطور معمول
 براي محاسبه مشتق اول و دوم از يك يا تعدادي از جملات چندجمله اي فوق استفاده مي
 شود، به ازاي مقادير مختلف </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=9 height=24
-src="Chapter04-Section02_files/image008.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و تعداد جملات استفاده شده مي توان روابط زير را به دست آورد:</span></p>
+                                  src="{% static 'images/Chapter04-Section02_files/image008.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و تعداد جملات استفاده شده مي توان روابط زير را به دست آورد:</span></p>
 
-<p class=MsoListParagraph dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoListParagraph dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-indent:-27.15pt'><span
-style='font-size:13.0pt;line-height:115%'><span style='font:7.0pt "Times New Roman"'> </span>I)<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            style='font-size:13.0pt;line-height:115%'><span style='font:7.0pt "Times New Roman"'> </span>I)<span
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span dir=RTL></span><span lang=FA style='font-size:16.0pt;
 line-height:115%;font-family:"B Nazanin"'>مشتق اول</span></p>
 
-<p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:center'><a
-name="OLE_LINK6"></a><a name="OLE_LINK5"></a><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            name="OLE_LINK6"></a><a name="OLE_LINK5"></a><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.0pt'><img width=477 height=33
-src="Chapter04-Section02_files/image009.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> : </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section02_files/image009.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> : </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=41 height=24
-src="Chapter04-Section02_files/image010.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و يك جمله</span></p>
+                                  src="{% static 'images/Chapter04-Section02_files/image010.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و يك جمله</span></p>
 
-<p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:center'><a
-name="OLE_LINK10"></a><a name="OLE_LINK9"></a><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            name="OLE_LINK10"></a><a name="OLE_LINK9"></a><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.5pt'><img width=479 height=34
-src="Chapter04-Section02_files/image011.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  : </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section02_files/image011.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  : </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=41 height=24
-src="Chapter04-Section02_files/image010.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و دو جمله</span></p>
+                                  src="{% static 'images/Chapter04-Section02_files/image010.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و دو جمله</span></p>
 
-<p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:center'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:13.0pt'><img width=486 height=39
-src="Chapter04-Section02_files/image012.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>: </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                   src="{% static 'images/Chapter04-Section02_files/image012.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>: </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.0pt'><img width=38 height=32
-src="Chapter04-Section02_files/image013.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و يك جمله</span></p>
+                                  src="{% static 'images/Chapter04-Section02_files/image013.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و يك جمله</span></p>
 
-<p class=MsoListParagraph dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoListParagraph dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-indent:-27.15pt'><span
-style='font-size:13.0pt;line-height:115%'>II)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            style='font-size:13.0pt;line-height:115%'>II)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span dir=RTL></span><span lang=FA style='font-size:16.0pt;
 line-height:115%;font-family:"B Nazanin"'>مشتق دوم</span></p>
 
-<p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:center'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.0pt'><img width=477 height=35
-src="Chapter04-Section02_files/image014.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> : </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section02_files/image014.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> : </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=41 height=24
-src="Chapter04-Section02_files/image010.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و يك جمله</span></p>
+                                  src="{% static 'images/Chapter04-Section02_files/image010.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و يك جمله</span></p>
 
-<p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:center'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.0pt'><img width=477 height=33
-src="Chapter04-Section02_files/image015.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  : </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section02_files/image015.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  : </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=41 height=24
-src="Chapter04-Section02_files/image010.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و دو جمله</span></p>
+                                  src="{% static 'images/Chapter04-Section02_files/image010.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و دو جمله</span></p>
 
-<p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:center'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:9.0pt'><img width=473 height=35
-src="Chapter04-Section02_files/image016.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>  : </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter04-Section02_files/image016.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  : </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=41 height=24
-src="Chapter04-Section02_files/image017.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span> و يك جمله</span></p>
+                                  src="{% static 'images/Chapter04-Section02_files/image017.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و يك جمله</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm'><span lang=FA style='font-size:16.0pt;
 line-height:115%;font-family:"B Nazanin"'>به همين ترتيب براي حالت پسرو هم مي
 توان روابط مربوطه را بدست آورد.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm'><a name="OLE_LINK18"></a><a
-name="OLE_LINK17"><span lang=FA style='font-size:16.0pt;line-height:115%;
+            name="OLE_LINK17"><span lang=FA style='font-size:16.0pt;line-height:115%;
 font-family:"B Titr"'>مثال 1: </span></a></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm'><span lang=FA style='font-size:16.0pt;
 line-height:115%;font-family:"B Titr"'>مثال 2: </span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm'><span dir=LTR style='font-size:13.0pt;
 line-height:115%'>&nbsp;</span></p>
 
