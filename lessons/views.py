@@ -275,3 +275,118 @@ def chap4_sec9(request):
 @login_required
 def chap4_sec10(request):
     return render(request, 'lessons/chap4_sec10.html')
+
+
+@login_required
+def chap4_example1(request):
+    return render(request, 'lessons/Chapter4-Example1.html')
+
+
+@login_required
+def chap4_example1(request):
+    return render(request, 'lessons/Chapter4-Example1.html')
+
+
+@login_required
+def chap4_example2(request):
+    return render(request, 'lessons/Chapter4-Example2.html')
+
+
+@login_required
+def chap4_example3(request):
+    return render(request, 'lessons/Chapter4-Example3.html')
+
+
+@login_required
+def chap4_example4(request):
+    return render(request, 'lessons/Chapter4-Example4.html')
+
+
+@login_required
+def chap4_example5(request):
+    return render(request, 'lessons/Chapter4-Example5.html')
+
+
+@login_required
+def chap4_example6(request):
+    return render(request, 'lessons/Chapter4-Example6.html')
+
+
+@login_required
+def chap4_example7(request):
+    return render(request, 'lessons/Chapter4-Example7.html')
+
+
+@login_required
+def chap4_example8(request):
+    return render(request, 'lessons/Chapter4-Example8.html')
+
+
+@login_required
+def chap4_example9(request):
+    return render(request, 'lessons/Chapter4-Example9.html')
+
+
+@login_required
+def chap4_example10(request):
+    return render(request, 'lessons/Chapter4-Example10.html')
+
+
+@login_required
+def chap4_example11(request):
+    return render(request, 'lessons/Chapter4-Example11.html')
+
+
+@login_required
+def chap4_example12(request):
+    return render(request, 'lessons/Chapter4-Example12.html')
+
+
+@login_required
+def chap4_example13(request):
+    return render(request, 'lessons/Chapter4-Example13.html')
+
+
+@login_required
+def chap4_example14(request):
+    return render(request, 'lessons/Chapter4-Example14.html')
+
+
+@login_required
+def chap4_example15(request):
+    return render(request, 'lessons/Chapter4-Example15.html')
+
+
+@login_required
+def chap4_example16(request):
+    return render(request, 'lessons/Chapter4-Example16.html')
+
+
+@login_required
+def chap4_example17(request):
+    return render(request, 'lessons/Chapter4-Example17.html')
+
+
+@login_required
+def chap4_example18(request):
+    return render(request, 'lessons/Chapter4-Example18.html')
+
+
+@login_required
+def chap4_example19(request):
+    return render(request, 'lessons/Chapter4-Example19.html')
+
+
+@login_required
+def chap4_example20(request):
+    return render(request, 'lessons/Chapter4-Example20.html')
+
+
+@login_required
+def chap4_example21(request):
+    return render(request, 'lessons/Chapter4-Example21.html')
+
+
+@login_required
+def chap4_example22(request):
+    return render(request, 'lessons/Chapter4-Example22.html')
