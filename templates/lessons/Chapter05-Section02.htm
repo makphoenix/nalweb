@@ -1,108 +1,150 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"B Titr";
-	panose-1:0 0 7 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:#CC6600;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: "B Titr";
+            panose-1: 0 0 7 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: #CC6600;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        /* List Definitions */
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -110,47 +152,43 @@ ul
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoListParagraphCxSpFirst dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoListParagraphCxSpFirst dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><b><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1585;&#1608;&#1588;
-&#1605;&#1593;&#1705;&#1608;&#1587; &#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1590;&#1585;&#1575;&#1740;&#1576;: </span></b></p>
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><b>روش معکوس ماتریس ضرایب: </b></span></b></p>
 
-<p class=MsoListParagraphCxSpLast dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoListParagraphCxSpLast dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1580;&#1608;&#1575;&#1576;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1582;&#1591;&#1740; </span><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=57 height=25 src="Chapter05-Section02_files/image001.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1608;&#1602;&#1578;&#1740;�
-&#1605;&#1593;&#1705;&#1608;&#1587;
-&#1662;&#1584;&#1740;&#1585;&#1575;&#1587;&#1578;&#1548; </span><span
-style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>جواب
+دستگاه خطی </span><span
+            style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=57 height=25
+                                  src="{% static 'images/Chapter05-Section02_files/image001.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> وقتی  معکوس پذیراست، </span><span
+            style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=75 height=25
-src="Chapter05-Section02_files/image002.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1740; &#1576;&#1575;&#1588;&#1583;. &#1662;&#1587;
-&#1576;&#1575; &#1740;&#1575;&#1601;&#1578;&#1606; </span><span
-style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter05-Section02_files/image002.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> می باشد. پس با یافتن </span><span
+            style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=30 height=25
-src="Chapter05-Section02_files/image003.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1740; &#1578;&#1608;&#1575;&#1606;
-&#1580;&#1608;&#1575;&#1576; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1585;&#1575; &#1740;&#1575;&#1601;&#1578;
-(&#1575;&#1604;&#1576;&#1578;&#1607; &#1575;&#1740;&#1606;
-&#1585;&#1608;&#1588; &#1575;&#1585;&#1586;&#1588; &#1606;&#1592;&#1585;&#1740;
-&#1583;&#1575;&#1585;&#1583; &#1575;&#1605;&#1575; &#1583;&#1585;
-&#1593;&#1605;&#1604; &#1705;&#1605;&#1578;&#1585; &#1605;&#1608;&#1585;&#1583;
-&#1575;&#1587;&#1578;&#1601;&#1575;&#1583;&#1607; &#1602;&#1585;&#1575;&#1585;
-&#1605;&#1740; &#1711;&#1740;&#1585;&#1583;)</span></p>
+                                  src="{% static 'images/Chapter05-Section02_files/image003.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> می توان جواب دستگاه را یافت (البته این روش ارزش نظری دارد اما
+در عمل کمتر مورد استفاده قرار می گیرد)</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><a name="OLE_LINK2"></a><a
-name="OLE_LINK1"><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Titr"'>&#1605;&#1579;&#1575;&#1604; 1:</span></a></p>
+    <br>
+    <!-- کلید مثال ۱ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap5_example1' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۱</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm'><b><span dir=LTR style='font-size:13.0pt;
 line-height:115%'>&nbsp;</span></b></p>
 

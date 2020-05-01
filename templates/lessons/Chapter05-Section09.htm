@@ -1,121 +1,167 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"B Titr";
-	panose-1:0 0 7 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-link:"Footer Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-link:Footer;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:aqua;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: "B Titr";
+            panose-1: 0 0 7 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoFooter, li.MsoFooter, div.MsoFooter {
+            mso-style-link: "Footer Char";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        span.FooterChar {
+            mso-style-name: "Footer Char";
+            mso-style-link: Footer;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        /* Page Definitions */
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: aqua;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        /* List Definitions */
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -123,63 +169,48 @@ ul
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoListParagraph dir=RTL style='margin-left:1.0cm;text-align:justify;
+    <p class=MsoListParagraph dir=RTL style='margin-left:1.0cm;text-align:justify;
 text-indent:-18.0pt'><b><span style='font-size:14.0pt;line-height:115%'>1-<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
-dir=RTL></span><b><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'>&#1585;&#1608;&#1588; &#1711;&#1575;&#1608;&#1587;-
-&#1587;&#1575;&#1740;&#1583;&#1604;</span></b></p>
+            style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+            dir=RTL></span><b><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'>روش گاوس- سایدل</span></b></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:36.0pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:36.0pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1576;&#1575;
-&#1575;&#1606;&#1580;&#1575;&#1605; &#1575;&#1589;&#1604;&#1575;&#1581;
-&#1587;&#1575;&#1583;&#1607; &#1575;&#1740; &#1583;&#1585;
-&#1585;&#1608;&#1588; &#1688;&#1575;&#1705;&#1608;&#1576;&#1740;
-&#1575;&#1740;&#1606; &#1585;&#1608;&#1588; &#1576;&#1583;&#1587;&#1578;
-&#1605;&#1740; &#1570;&#1740;&#1583;. &#1583;&#1585; &#1585;&#1608;&#1588;
-&#1688;&#1575;&#1705;&#1608;&#1576;&#1740; &#1662;&#1587; &#1575;&#1586;
-&#1662;&#1575;&#1740;&#1575;&#1606; &#1607;&#1585; &#1578;&#1705;&#1585;&#1575;&#1585;
-&#1576;&#1607; &#1705;&#1605;&#1705; &#1605;&#1602;&#1575;&#1583;&#1740;&#1585;
-&#1580;&#1583;&#1740;&#1583; &#1581;&#1575;&#1589;&#1604; &#1588;&#1583;&#1607;
-&#1578;&#1705;&#1585;&#1575;&#1585; &#1576;&#1593;&#1583;&#1740; &#1575;&#1606;&#1580;&#1575;&#1605;
-&#1605;&#1740; &#1711;&#1740;&#1585;&#1583;. &#1605;&#1575; &#1583;&#1585;
-&#1585;&#1608;&#1588; &#1711;&#1575;&#1608;&#1587;-
-&#1587;&#1575;&#1740;&#1583;&#1604; &#1605;&#1606;&#1578;&#1592;&#1585;
-&#1576;&#1607; &#1583;&#1587;&#1578; &#1570;&#1605;&#1583;&#1606;
-&#1607;&#1605;&#1607; &#1605;&#1602;&#1575;&#1583;&#1740;&#1585;
-&#1581;&#1575;&#1589;&#1604; &#1575;&#1586; &#1740;&#1705;
-&#1578;&#1705;&#1585;&#1575;&#1585; &#1606;&#1605;&#1740;
-&#1588;&#1608;&#1740;&#1605; &#1608; &#1576;&#1607; &#1605;&#1581;&#1590; &#1575;&#1740;&#1606;&#1705;&#1607;
-&#1575;&#1608;&#1604;&#1740;&#1606; &#1605;&#1602;&#1583;&#1575;&#1585;
-&#1607;&#1585; &#1605;&#1580;&#1607;&#1608;&#1604; &#1583;&#1585;
-&#1583;&#1587;&#1578;&#1585;&#1587; &#1602;&#1585;&#1575;&#1585; &#1711;&#1585;&#1601;&#1578;&#1548;
-&#1570;&#1606; &#1585;&#1575; &#1576;&#1607;
-&#1593;&#1606;&#1608;&#1575;&#1606; &#1605;&#1602;&#1583;&#1575;&#1585;
-&#1575;&#1608;&#1604;&#1740;&#1607; &#1580;&#1583;&#1740;&#1583; &#1583;&#1585;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578; &#1576;&#1593;&#1583;&#1740;
-&#1602;&#1585;&#1575;&#1585; &#1583;&#1575;&#1583;&#1607; &#1608;
-&#1578;&#1705;&#1585;&#1575;&#1585; &#1585;&#1575;
-&#1575;&#1583;&#1575;&#1605;&#1607; &#1605;&#1740;
-&#1583;&#1607;&#1740;&#1605;. &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1576;&#1575;&#1586;&#1711;&#1588;&#1578;&#1740; &#1575;&#1740;&#1606;
-&#1585;&#1608;&#1588; &#1576;&#1589;&#1608;&#1585;&#1578; &#1586;&#1740;&#1585;
-&#1575;&#1587;&#1578;.</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>با انجام
+اصلاح ساده ای در روش ژاکوبی این روش بدست می آید. در روش ژاکوبی پس از پایان هر
+تکرار به کمک مقادیر جدید حاصل شده تکرار بعدی انجام می گیرد. ما در روش گاوس-
+سایدل منتظر به دست آمدن همه مقادیر حاصل از یک تکرار نمی شویم و به محض اینکه
+اولین مقدار هر مجهول در دسترس قرار گرفت، آن را به عنوان مقدار اولیه جدید در
+معادلات بعدی قرار داده و تکرار را ادامه می دهیم. دستگاه بازگشتی این روش بصورت
+زیر است.</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:36.0pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=506 height=165 src="Chapter05-Section09_files/image001.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=506 height=165 src="{% static 'images/Chapter05-Section09_files/image001.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:36.0pt;
-margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>&#1605;&#1579;&#1575;&#1604;
-11:</span></p>
+    <br>
+    <!-- کلید مثال ۱۱ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap5_example11' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۱۱</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:36.0pt;
-margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>&#1605;&#1579;&#1575;&#1604;
-12:</span></p>
+    <br>
+    <!-- کلید مثال ۱۲ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap5_example12' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۱۲</a>
+        </span>
+    </p>
 
 </div>
 

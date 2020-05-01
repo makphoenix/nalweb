@@ -1,108 +1,150 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"B Titr";
-	panose-1:0 0 7 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:#FF33CC;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: "B Titr";
+            panose-1: 0 0 7 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: #FF33CC;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        /* List Definitions */
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -110,603 +152,435 @@ ul
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoListParagraphCxSpFirst dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoListParagraphCxSpFirst dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><b><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1585;&#1608;&#1588;
-&#1711;&#1575;&#1608;&#1587;:</span></b><span lang=FA style='font-size:16.0pt;
-line-height:115%;font-family:"B Nazanin"'> </span></p>
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش
+گاوس:</span></b><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'> </span></p>
 
-<p class=MsoListParagraphCxSpLast dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoListParagraphCxSpLast dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1585;&#1608;&#1588;
-&#1711;&#1575;&#1608;&#1587; &#1740;&#1705; &#1585;&#1608;&#1588;
-&#1581;&#1584;&#1601;&#1740; &#1575;&#1587;&#1578; &#1705;&#1607;
-&#1591;&#1740; &#1570;&#1606; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578; &#1582;&#1591;&#1740;
-&#1575;&#1608;&#1604;&#1740;&#1607; &#1576;&#1607; &#1740;&#1705;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578; &#1582;&#1591;&#1740;
-&#1605;&#1579;&#1604;&#1579;&#1740; &#1578;&#1576;&#1583;&#1740;&#1604;
-&#1605;&#1740; &#1588;&#1608;&#1583; &#1705;&#1607; &#1581;&#1604;
-&#1570;&#1606; &#1576;&#1587;&#1740;&#1575;&#1585; &#1587;&#1575;&#1583;&#1607;
-&#1575;&#1587;&#1578;. &#1575;&#1576;&#1578;&#1583;&#1575;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587; &#1586;&#1740;&#1585; &#1585;&#1575;
-&#1705;&#1607; &#1576;&#1607; &#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1575;&#1601;&#1586;&#1608;&#1583;&#1607; &#1605;&#1585;&#1587;&#1608;&#1605;
-&#1575;&#1587;&#1578; &#1578;&#1588;&#1705;&#1740;&#1604; &#1605;&#1740;
-&#1583;&#1607;&#1740;&#1605;&#1548; &#1587;&#1662;&#1587; &#1576;&#1575;
-&#1575;&#1587;&#1578;&#1601;&#1575;&#1583;&#1607; &#1575;&#1586; &#1587;&#1607;
-&#1593;&#1605;&#1604; &#1586;&#1740;&#1585; &#1705;&#1607; &#1576;&#1607;
-&#1575;&#1593;&#1605;&#1575;&#1604; &#1587;&#1591;&#1585;&#1740; &#1605;&#1602;&#1583;&#1605;&#1575;&#1578;&#1740;
-&#1605;&#1593;&#1585;&#1608;&#1601; &#1575;&#1587;&#1578;&#1548;
-&#1585;&#1608;&#1606;&#1583; &#1605;&#1579;&#1604;&#1579;&#1575;&#1578;&#1740;
-&#1705;&#1585;&#1583;&#1606; &#1585;&#1575; &#1575;&#1606;&#1580;&#1575;&#1605;
-&#1605;&#1740; &#1583;&#1607;&#1740;&#1605;.</span></p>
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش
+گاوس یک روش حذفی است که طی آن دستگاه معادلات خطی اولیه به یک دستگاه معادلات خطی
+مثلثی تبدیل می شود که حل آن بسیار ساده است. ابتدا ماتریس زیر را که به ماتریس
+افزوده مرسوم است تشکیل می دهیم، سپس با استفاده از سه عمل زیر که به اعمال سطری مقدماتی
+معروف است، روند مثلثاتی کردن را انجام می دهیم.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>-
-&#1578;&#1593;&#1608;&#1740;&#1590; &#1607;&#1585; &#1583;&#1608;
-&#1587;&#1591;&#1585; &#1575;&#1586; &#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1576;&#1575; &#1740;&#1705;&#1583;&#1740;&#1711;&#1585;.</span></p>
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>- تعویض هر دو
+سطر از ماتریس با یکدیگر.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>-
-&#1590;&#1585;&#1576; &#1607;&#1585; &#1587;&#1591;&#1585; &#1583;&#1585;
-&#1740;&#1705; &#1593;&#1583;&#1583; &#1579;&#1575;&#1576;&#1578;
-&#1594;&#1740;&#1585; &#1589;&#1601;&#1585;.</span></p>
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>- ضرب هر سطر
+در یک عدد ثابت غیر صفر.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>-
-&#1575;&#1601;&#1586;&#1608;&#1583;&#1606; &#1605;&#1590;&#1585;&#1576;&#1740;
-&#1575;&#1586; &#1740;&#1705; &#1587;&#1591;&#1585; &#1576;&#1607;
-&#1587;&#1591;&#1585; &#1583;&#1740;&#1711;&#1585; &#1608;
-&#1602;&#1585;&#1575;&#1585;&#1583;&#1575;&#1583;&#1606; &#1570;&#1606;
-&#1576;&#1607; &#1580;&#1575;&#1740; &#1570;&#1606; &#1587;&#1591;&#1585;.</span></p>
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>- افزودن
+مضربی از یک سطر به سطر دیگر و قراردادن آن به جای آن سطر.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1740;&#1606;
-&#1575;&#1593;&#1605;&#1575;&#1604; &#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1575;&#1601;&#1586;&#1608;&#1583;&#1607; &#1585;&#1575; &#1576;&#1607;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587; &#1575;&#1601;&#1586;&#1608;&#1583;&#1607;
-&#1583;&#1740;&#1711;&#1585;&#1740; &#1578;&#1576;&#1583;&#1740;&#1604;
-&#1605;&#1740; &#1705;&#1606;&#1583;&#1705;&#1607; &#1580;&#1608;&#1575;&#1576;
-&#1575;&#1740;&#1606; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1576;&#1575;
-&#1580;&#1608;&#1575;&#1576; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1575;&#1608;&#1604;&#1740;&#1607; &#1740;&#1705;&#1740;
-&#1575;&#1587;&#1578;.</span></p>
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>این اعمال
+ماتریس افزوده را به ماتریس افزوده دیگری تبدیل می کندکه جواب این دستگاه با جواب
+دستگاه اولیه یکی است.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1585;&#1608;&#1588;
-&#1585;&#1575; &#1576;&#1575; &#1605;&#1579;&#1575;&#1604;
-&#1586;&#1740;&#1585; &#1578;&#1608;&#1590;&#1740;&#1581; &#1605;&#1740;
-&#1583;&#1607;&#1740;&#1605;.</span></p>
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش را با
+مثال زیر توضیح می دهیم.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1586;&#1740;&#1585; &#1585;&#1575; &#1583;&#1585; &#1606;&#1592;&#1585;
-&#1576;&#1711;&#1740;&#1585;&#1740;&#1583;</span></p>
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>دستگاه زیر را
+در نظر بگیرید</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
 unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=229 height=90 src="Chapter05-Section04_files/image001.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=229 height=90 src="{% static 'images/Chapter05-Section04_files/image001.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1575;&#1601;&#1586;&#1608;&#1583;&#1607; &#1585;&#1575;
-&#1578;&#1588;&#1705;&#1740;&#1604; &#1605;&#1740;
-&#1583;&#1607;&#1740;&#1605;.</span></p>
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>ماتریس افزوده
+را تشکیل می دهیم.</span></p>
 
-<p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
 21.3pt;margin-bottom:10.0pt;margin-left:27.15pt;text-align:center;direction:
-ltr;unicode-bidi:embed'><span style='position:absolute;z-index:251660288;
-left:0px;margin-left:399px;margin-top:2px;width:1px;height:68px'><img width=1
-height=68 src="Chapter05-Section04_files/image002.gif"></span><a
-name="OLE_LINK6"></a><a name="OLE_LINK5"></a><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:28.5pt'><img width=199 height=86
-src="Chapter05-Section04_files/image003.gif"></span></p>
+ltr;unicode-bidi:embed'>
+{#        <span style='position:absolute;z-index:251660288;#}
+{#left:0px;margin-left:981px;margin-top:8px;width:1px;height:68px'><img width=1 height=68 src="{% static 'images/Chapter05-Section04_files/image002.gif' %}"></span>#}
+        <a name="OLE_LINK6"></a><a name="OLE_LINK5"></a>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:28.5pt'><img width=199 height=86 src="{% static 'images/Chapter05-Section04_files/image003.gif' %}"></span></p>
 
-<span lang=FA dir=RTL style='font-size:16.0pt;line-height:115%;font-family:
+    <span lang=FA dir=RTL style='font-size:16.0pt;line-height:115%;font-family:
 "B Nazanin"'><br clear=all style='page-break-before:always'>
 </span>
 
-<p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+    <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
 embed'><span lang=FA dir=RTL style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>&nbsp;</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;&#1607;&#1575;&#1740;
-&#1575;&#1740;&#1580;&#1575;&#1583; &#1588;&#1583;&#1607; &#1576;&#1575;
-&#1575;&#1587;&#1578;&#1601;&#1575;&#1583;&#1607; &#1575;&#1586;
-&#1575;&#1593;&#1605;&#1575;&#1604; &#1587;&#1591;&#1585;&#1740;
-&#1605;&#1602;&#1583;&#1605;&#1575;&#1578;&#1740;
-&#1593;&#1576;&#1575;&#1585;&#1578;&#1606;&#1583; &#1575;&#1586;:</span></p>
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>ماتریسهای
+ایجاد شده با استفاده از اعمال سطری مقدماتی عبارتند از:</span></p>
 
-<p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
 21.3pt;margin-bottom:10.0pt;margin-left:27.15pt;text-align:center;direction:
 ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=514 height=111 src="Chapter05-Section04_files/image004.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=514 height=111 src="{% static 'images/Chapter05-Section04_files/image004.gif' %}"></span></p>
 
-<p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
 21.3pt;margin-bottom:10.0pt;margin-left:27.15pt;text-align:center;direction:
 ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=265 height=100 src="Chapter05-Section04_files/image005.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=265 height=100 src="{% static 'images/Chapter05-Section04_files/image005.gif' %}"></span></p>
 
-<p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
+    <p class=MsoNormal align=center dir=LTR style='margin-top:0cm;margin-right:
 21.3pt;margin-bottom:10.0pt;margin-left:27.15pt;text-align:center;direction:
 ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=281 height=114 src="Chapter05-Section04_files/image006.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=281 height=114 src="{% static 'images/Chapter05-Section04_files/image006.gif' %}"></span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
 margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
 unicode-bidi:embed'><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1705;&#1607;
-</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>که </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=17 height=25
-src="Chapter05-Section04_files/image007.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1606;&#1588;&#1575;&#1606;
-&#1583;&#1607;&#1606;&#1583;&#1607; &#1587;&#1591;&#1585; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=7 height=25 src="Chapter05-Section04_files/image008.gif"></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1605;
-&#1575;&#1587;&#1578; &#1608; &#1575;&#1593;&#1605;&#1575;&#1604;
-&#1575;&#1606;&#1580;&#1575;&#1605; &#1588;&#1583;&#1607; &#1576;&#1585;
-&#1585;&#1608;&#1740; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=17 height=25
-src="Chapter05-Section04_files/image007.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1575;&#1593;&#1605;&#1575;&#1604;&#1740;
-&#1575;&#1587;&#1578; &#1705;&#1607; &#1583;&#1585; &#1607;&#1585;
-&#1605;&#1585;&#1581;&#1604;&#1607; &#1576;&#1585; &#1585;&#1608;&#1740;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587; &#1575;&#1601;&#1586;&#1608;&#1583;&#1607;
-&#1602;&#1576;&#1604;&#1740; &#1575;&#1606;&#1580;&#1575;&#1605;
-&#1588;&#1583;&#1607; &#1608; &#1581;&#1575;&#1589;&#1604; &#1583;&#1585;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1575;&#1601;&#1586;&#1608;&#1583;&#1607; &#1576;&#1593;&#1583;&#1740;
-&#1602;&#1585;&#1575;&#1585; &#1583;&#1575;&#1583;&#1607; &#1588;&#1583;&#1607;
-&#1575;&#1587;&#1578; &#1608; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=76 height=25
-src="Chapter05-Section04_files/image009.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�.</span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1576;&#1585;&#1575;&#1740;
-&#1605;&#1579;&#1575;&#1604; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:9.0pt'><img width=73 height=35
-src="Chapter05-Section04_files/image010.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1583;&#1585; &#1605;&#1585;&#1581;&#1604;&#1607;
-&#1575;&#1608;&#1604; &#1740;&#1593;&#1606;&#1740; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:9.0pt'><img width=8 height=35
-src="Chapter05-Section04_files/image011.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1587;&#1591;&#1585; &#1575;&#1608;&#1604;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1575;&#1601;&#1586;&#1608;&#1583;&#1607; &#1575;&#1608;&#1604;&#1740;&#1607;
-&#1585;&#1575; &#1575;&#1586; &#1587;&#1591;&#1585; &#1583;&#1608;&#1605;
-&#1570;&#1606; &#1705;&#1605; &#1705;&#1585;&#1583;&#1607; &#1608;
-&#1581;&#1575;&#1589;&#1604; &#1607;&#1585; &#1593;&#1606;&#1589;&#1585;
-&#1585;&#1575; &#1583;&#1585; &#1580;&#1575;&#1740;
-&#1605;&#1606;&#1575;&#1587;&#1576; &#1582;&#1608;&#1583;&#1588; &#1583;&#1585;
-&#1587;&#1591;&#1585; &#1583;&#1608;&#1605;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1575;&#1601;&#1586;&#1608;&#1583;&#1607; &#1605;&#1585;&#1581;&#1604;&#1607;
-&#1583;&#1608;&#1605; &#1602;&#1585;&#1575;&#1585; &#1583;&#1575;&#1583;&#1607;
-&#1575;&#1740;&#1605; .</span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1740;&#1606;&#1705;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1605;&#1579;&#1604;&#1579;&#1740;
-&#1588;&#1705;&#1604; &#1581;&#1575;&#1589;&#1604; &#1585;&#1575;
-&#1583;&#1575;&#1585;&#1740;&#1605;:</span></p>
-
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
-margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
-unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=195 height=25 src="Chapter05-Section04_files/image012.gif"></span></p>
-
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
-margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
-unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=211 height=34 src="Chapter05-Section04_files/image013.gif"></span></p>
-
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
-margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
-unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=197 height=34 src="Chapter05-Section04_files/image014.gif"></span></p>
-
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
-margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
-unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=186 height=34 src="Chapter05-Section04_files/image015.gif"></span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1740;&#1606;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1576;&#1575;
-&#1585;&#1608;&#1606;&#1583; �
-&#1580;&#1575;&#1740;&#1711;&#1584;&#1575;&#1585;&#1740; &#1575;&#1586;
-&#1662;&#1575;&#1740;&#1740;&#1606;� &#1581;&#1604; &#1605;&#1740; &#1588;&#1608;&#1583;.
-&#1740;&#1593;&#1606;&#1740; &#1605;&#1602;&#1583;&#1575;&#1585; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=18 height=25
-src="Chapter05-Section04_files/image016.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1575;&#1586; &#1605;&#1593;&#1575;&#1583;&#1604;&#1607;
-&#1670;&#1607;&#1575;&#1585;&#1605; &#1605;&#1581;&#1575;&#1587;&#1576;&#1607;
-&#1588;&#1583;&#1607; &#1608; &#1587;&#1662;&#1587; &#1576;&#1575;
-&#1575;&#1587;&#1578;&#1601;&#1575;&#1583;&#1607; &#1575;&#1586; &#1570;&#1606;
-&#1583;&#1585; &#1605;&#1593;&#1575;&#1583;&#1604;&#1607;
-&#1587;&#1608;&#1605;&#1548; &#1605;&#1602;&#1583;&#1575;&#1585; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=18 height=25
-src="Chapter05-Section04_files/image017.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1608; &#1576;&#1607; &#1607;&#1605;&#1740;&#1606;
-&#1578;&#1585;&#1578;&#1740;&#1576; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=43 height=25
-src="Chapter05-Section04_files/image018.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>� &#1576;&#1607; &#1583;&#1587;&#1578; &#1605;&#1740;
-&#1570;&#1740;&#1583;. &#1575;&#1740;&#1606; &#1585;&#1608;&#1606;&#1583;
-&#1585;&#1575; &#1580;&#1575;&#1740;&#1711;&#1584;&#1575;&#1585;&#1740;
-&#1575;&#1586; &#1662;&#1575;&#1740;&#1740;&#1606; &#1740;&#1575;
-&#1585;&#1608; &#1576;&#1607; &#1576;&#1575;&#1604;&#1575;&#1548; <br>
-&#1605;&#1740; &#1606;&#1575;&#1605;&#1606;&#1583;.
-&#1606;&#1578;&#1575;&#1740;&#1580;
-&#1593;&#1576;&#1575;&#1585;&#1578;&#1606;&#1583; &#1575;&#1586;� </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=195 height=25
-src="Chapter05-Section04_files/image019.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>� &#1608; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=52 height=25
-src="Chapter05-Section04_files/image020.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�.</span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1607;&#1605;&#1575;&#1606;&#1591;&#1608;&#1585;
-&#1705;&#1607; &#1583;&#1740;&#1583;&#1740;&#1605; &#1583;&#1585;
-&#1585;&#1608;&#1588; &#1581;&#1584;&#1601;&#1740; &#1711;&#1575;&#1608;&#1587;
-&#1583;&#1585; &#1607;&#1585; &#1605;&#1585;&#1581;&#1604;&#1607;
-&#1575;&#1586; &#1740;&#1705; &#1593;&#1606;&#1589;&#1585;
-&#1582;&#1575;&#1589; &#1575;&#1587;&#1578;&#1601;&#1575;&#1583;&#1607;
-&#1605;&#1740; &#1588;&#1608;&#1583; &#1705;&#1607; &#1570;&#1606;
-&#1585;&#1575; � &#1605;&#1581;&#1608;&#1585;� &#1605;&#1740;
-&#1606;&#1575;&#1605;&#1740;&#1605; &#1608; &#1576;&#1607;
-&#1705;&#1605;&#1705; &#1575;&#1740;&#1606; &#1605;&#1581;&#1608;&#1585;
-&#1607;&#1605;&#1607; &#1593;&#1606;&#1575;&#1589;&#1585; &#1586;&#1740;&#1585;
-&#1570;&#1606;&#1548; &#1583;&#1585; &#1587;&#1578;&#1608;&#1606;&#1740;
-&#1705;&#1607; &#1602;&#1585;&#1575;&#1585; &#1583;&#1575;&#1585;&#1583;&#1548;
-&#1589;&#1601;&#1585; &#1605;&#1740; &#1588;&#1608;&#1606;&#1583;.
-&#1575;&#1608;&#1604;&#1740;&#1606; &#1605;&#1581;&#1608;&#1585; &#1583;&#1585;
-&#1605;&#1581;&#1604; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=26 height=25
-src="Chapter05-Section04_files/image021.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1575;&#1586; &#1575;&#1608;&#1604;&#1740;&#1606;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587; &#1578;&#1594;&#1740;&#1740;&#1585;
-&#1740;&#1575;&#1601;&#1578;&#1607; &#1608;&#1575;&#1602;&#1593;
-&#1588;&#1583;&#1607; &#1608; &#1576;&#1602;&#1740;&#1607;
-&#1606;&#1740;&#1586; &#1576;&#1607; &#1607;&#1605;&#1740;&#1606;
-&#1578;&#1585;&#1578;&#1740;&#1576; &#1580;&#1575;&#1740; &#1605;&#1740;
-&#1711;&#1740;&#1585;&#1606;&#1583;. &#1607;&#1605;&#1607;
-&#1605;&#1581;&#1608;&#1585;&#1607;&#1575; &#1576;&#1585; &#1585;&#1608;&#1740;
-&#1602;&#1591;&#1585; &#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1606;&#1607;&#1575;&#1740;&#1740; &#1602;&#1585;&#1575;&#1585; &#1605;&#1740;
-&#1711;&#1740;&#1585;&#1606;&#1583;. </span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&nbsp;</span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><b><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1605;&#1581;&#1608;&#1585;&#1711;&#1740;&#1585;&#1740;
-&#1580;&#1586;&#1740;&#1740;:</span></b></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1585;&#1575;&#1576;&#1591;&#1607;
-</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=132 height=25
-src="Chapter05-Section04_files/image022.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1705;&#1607; &#1605;&#1585;&#1576;&#1608;&#1591;
-&#1576;&#1607; &#1582;&#1591;&#1575;&#1740; &#1581;&#1575;&#1589;&#1604;
-&#1590;&#1585;&#1576; &#1583;&#1608; &#1593;&#1583;&#1583; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=11 height=25 src="Chapter05-Section04_files/image023.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1608; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=10 height=25 src="Chapter05-Section04_files/image024.gif"></span><span
-dir=RTL></span><span style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�<span lang=FA>&#1605;&#1740;
-&#1576;&#1575;&#1588;&#1583;&#1548; &#1606;&#1588;&#1575;&#1606; &#1605;&#1740;
-&#1583;&#1607;&#1583; &#1705;&#1607; &#1607;&#1585; &#1711;&#1575;&#1607; </span></span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=11 height=25 src="Chapter05-Section04_files/image023.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1608;&#1740;&#1575; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=10 height=25 src="Chapter05-Section04_files/image024.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1575;&#1593;&#1583;&#1575;&#1583;&#1740;
-&#1576;&#1586;&#1585;&#1711; &#1576;&#1575;&#1588;&#1606;&#1583;&#1548;
-&#1582;&#1591;&#1575;&#1740; &#1581;&#1575;&#1589;&#1604;�
-&#1590;&#1585;&#1576; &#1575;&#1740;&#1606; &#1583;&#1608; &#1593;&#1583;&#1583;
-&#1576;&#1586;&#1585;&#1711; &#1605;&#1740; &#1576;&#1575;&#1588;&#1583;&#1548;
-&#1581;&#1578;&#1740; &#1575;&#1711;&#1585; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=18 height=25
-src="Chapter05-Section04_files/image025.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1608; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=18 height=25
-src="Chapter05-Section04_files/image026.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1602;&#1575;&#1583;&#1740;&#1585;
-&#1705;&#1608;&#1670;&#1705;&#1740; &#1576;&#1575;&#1588;&#1606;&#1583;.
-&#1575;&#1605;&#1575; &#1607;&#1585;&#1711;&#1575;&#1607; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=87 height=25
-src="Chapter05-Section04_files/image027.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1602;&#1583;&#1575;&#1585;
-&#1582;&#1591;&#1575;&#1740; &#1590;&#1585;&#1576; &#1583;&#1585;
-&#1581;&#1583; &#1602;&#1575;&#1576;&#1604; &#1602;&#1576;&#1608;&#1604;
-&#1582;&#1608;&#1575;&#1607;&#1583; &#1576;&#1608;&#1583;. &#1604;&#1584;&#1575;
-&#1576;&#1575;&#1740;&#1587;&#1578;&#1740; &#1581;&#1578;&#1740;
-&#1575;&#1604;&#1575;&#1605;&#1705;&#1575;&#1606; &#1575;&#1586;
-&#1575;&#1593;&#1583;&#1575;&#1583; &#1578;&#1602;&#1585;&#1740;&#1576;&#1740;
-&#1576;&#1586;&#1585;&#1711; &#1575;&#1580;&#1578;&#1606;&#1575;&#1576;�
-&#1705;&#1606;&#1740;&#1605;. &#1576;&#1585;&#1575;&#1740;
-&#1578;&#1608;&#1590;&#1740;&#1581;
-&#1605;&#1588;&#1705;&#1604;&#1575;&#1578;&#1740; &#1705;&#1607; &#1583;&#1585;
-&#1575;&#1740;&#1606; &#1605;&#1608;&#1585;&#1583; &#1605;&#1740;
-&#1578;&#1608;&#1575;&#1606;&#1583; &#1576;&#1607; &#1608;&#1580;&#1608;&#1583;
-&#1576;&#1740;&#1575;&#1740;&#1583;. &#1576;&#1607;
-&#1605;&#1579;&#1575;&#1604; &#1586;&#1740;&#1585; &#1578;&#1608;&#1580;&#1607;
-&#1705;&#1606;&#1740;&#1583;.</span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1605;&#1579;&#1575;&#1604;:
-&#1580;&#1608;&#1575;&#1576; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1586;&#1740;&#1585; &#1585;&#1575; &#1576;&#1607; &#1705;&#1605;&#1705;
-&#1585;&#1608;&#1588; &#1581;&#1584;&#1601;&#1740; &#1711;&#1575;&#1608;&#1587;
-&#1608; &#1580;&#1575;&#1740;&#1711;&#1584;&#1575;&#1585;&#1740;
-&#1662;&#1587;&#1585;&#1608; &#1576;&#1607; &#1583;&#1587;&#1578;
-&#1570;&#1608;&#1585;&#1740;&#1583;.</span></p>
-
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
-margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
-unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=139 height=48 src="Chapter05-Section04_files/image028.gif"></span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1581;&#1604;:
-&#1576;&#1585;&#1575;&#1740; &#1581;&#1584;&#1601; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=18 height=25
-src="Chapter05-Section04_files/image029.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1575;&#1586; &#1605;&#1593;&#1575;&#1583;&#1604;&#1607;
-&#1583;&#1608;&#1605;&#1548; &#1576;&#1575;&#1740;&#1587;&#1578;&#1740;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1607; &#1575;&#1608;&#1604; &#1585;&#1575;
-&#1583;&#1585; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=43 height=26
-src="Chapter05-Section04_files/image030.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1590;&#1585;&#1576; &#1606;&#1605;&#1608;&#1583;&#1607; &#1608;
-&#1576;&#1575; &#1605;&#1593;&#1575;&#1583;&#1604;&#1607; &#1583;&#1608;&#1605;
-&#1580;&#1605;&#1593; &#1705;&#1606;&#1740;&#1605;&#1548; &#1583;&#1585;
-&#1575;&#1740;&#1606; &#1589;&#1608;&#1585;&#1578;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1593;&#1576;&#1575;&#1585;&#1578;
-&#1575;&#1587;&#1578; &#1575;&#1586;:</span></p>
-
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
-margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
-unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=189 height=51 src="Chapter05-Section04_files/image031.gif"></span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1662;&#1587;
-</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=18 height=25
-src="Chapter05-Section04_files/image032.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1576;&#1585;&#1575;&#1576;&#1585; &#1575;&#1587;&#1578;
-&#1576;&#1575; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=56 height=25
-src="Chapter05-Section04_files/image033.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�.&#1576;&#1575; &#1602;&#1585;&#1575;&#1585;
-&#1583;&#1575;&#1583;&#1606; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=18 height=25
-src="Chapter05-Section04_files/image032.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1583;&#1585; &#1605;&#1593;&#1575;&#1583;&#1604;&#1607;
-&#1575;&#1608;&#1604; &#1582;&#1608;&#1575;&#1607;&#1740;&#1605;
-&#1583;&#1575;&#1588;&#1578;:</span></p>
-
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
-margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
-unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=193 height=35 src="Chapter05-Section04_files/image034.gif"></span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1576;&#1606;&#1575;&#1576;&#1585;&#1575;&#1740;&#1606;
-&#1580;&#1608;&#1575;&#1576; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1576;&#1575;&#1740;&#1587;&#1578;&#1740; &#1576;&#1607;
-&#1589;&#1608;&#1585;&#1578; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=45 height=25
-src="Chapter05-Section04_files/image035.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>� &#1576;&#1575;&#1588;&#1583;.</span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1581;&#1575;&#1604;
-&#1583;&#1585; &#1575;&#1740;&#1606; &#1605;&#1579;&#1575;&#1604;
-&#1580;&#1575;&#1740; &#1583;&#1608; &#1605;&#1593;&#1575;&#1583;&#1604;&#1607;
-&#1585;&#1575; &#1593;&#1608;&#1590; &#1705;&#1606;&#1740;&#1605; &#1608;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1585;&#1575;
-&#1605;&#1580;&#1583;&#1583;&#1575;&#1611; &#1581;&#1604; &#1605;&#1740;
-&#1705;&#1606;&#1740;&#1605;. &#1576;&#1575;&#1590;&#1585;&#1576;
-&#1705;&#1585;&#1583;&#1606; &#1605;&#1593;&#1575;&#1583;&#1604;&#1607;
-&#1575;&#1608;&#1604; &#1583;&#1585; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=53 height=26
-src="Chapter05-Section04_files/image036.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1608; &#1575;&#1606;&#1580;&#1575;&#1605;
-&#1593;&#1605;&#1604;&#1740;&#1575;&#1578; &#1604;&#1575;&#1586;&#1605;
-&#1582;&#1608;&#1575;&#1607;&#1740;&#1605; &#1583;&#1575;&#1588;&#1578;:</span></p>
-
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
-margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
-unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=227 height=48 src="Chapter05-Section04_files/image037.gif"></span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1740;&#1593;&#1606;&#1740;
-</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=53 height=25
-src="Chapter05-Section04_files/image038.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1608; &#1576;&#1575; &#1578;&#1608;&#1580;&#1607;
-&#1576;&#1607; &#1605;&#1593;&#1575;&#1583;&#1604;&#1607; &#1575;&#1608;&#1604;
-</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=52 height=25
-src="Chapter05-Section04_files/image020.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�.� &#1662;&#1587; &#1580;&#1608;&#1575;&#1576;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1576;&#1607;
-&#1589;&#1608;&#1585;&#1578; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=45 height=25
-src="Chapter05-Section04_files/image039.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1740; &#1576;&#1575;&#1588;&#1583;.</span></p>
-
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1593;&#1604;&#1578;
-&#1606;&#1575;&#1583;&#1585;&#1587;&#1578; &#1576;&#1608;&#1583;&#1606;
-&#1580;&#1608;&#1575;&#1576; &#1583;&#1585; &#1575;&#1576;&#1578;&#1583;&#1575;
-&#1575;&#1740;&#1606; &#1575;&#1587;&#1578; &#1705;&#1607;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1607; &#1583;&#1608;&#1605; &#1583;&#1585;
-&#1593;&#1583;&#1583; &#1576;&#1586;&#1585;&#1711;&#1740; &#1590;&#1585;&#1576;
-&#1605;&#1740; &#1588;&#1608;&#1583; &#1608;
-&#1605;&#1740;&#1586;&#1575;&#1606; &#1582;&#1591;&#1575; &#1585;&#1575;
-&#1576;&#1607; &#1605;&#1602;&#1583;&#1575;&#1585;
-&#1586;&#1740;&#1575;&#1583;&#1740; &#1575;&#1601;&#1586;&#1575;&#1740;&#1588; &#1605;&#1740;
-&#1583;&#1607;&#1583;. &#1575;&#1605;&#1575; &#1583;&#1585;
-&#1605;&#1585;&#1581;&#1604;&#1607; &#1583;&#1608;&#1605; &#1581;&#1604;&#1548;
-&#1575;&#1740;&#1606; &#1593;&#1583;&#1583; &#1705;&#1608;&#1670;&#1705;
-&#1575;&#1587;&#1578;. &#1576;&#1606;&#1575;&#1576;&#1585;&#1575;&#1740;&#1606;
-&#1576;&#1585;&#1575;&#1740; &#1585;&#1601;&#1593; &#1575;&#1740;&#1606;
-&#1605;&#1588;&#1705;&#1604; &#1607;&#1585;&#1711;&#1575;&#1607;
-&#1576;&#1582;&#1608;&#1575;&#1607;&#1740;&#1605; &#1590;&#1585;&#1740;&#1576; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:7.0pt'><img width=16 height=27
-src="Chapter05-Section04_files/image040.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1585;&#1575;
-&#1583;&#1585;&#1587;&#1591;&#1585;&#1607;&#1575;&#1740; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=40 height=25 src="Chapter05-Section04_files/image041.gif"></span><span
-dir=LTR style='font-size:14.0pt;line-height:115%'>�</span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1575;&#1605; &#1578;&#1575; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=11 height=25
-src="Chapter05-Section04_files/image042.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1575;&#1605; &#1589;&#1601;&#1585;
-&#1705;&#1606;&#1740;&#1605;&#1548; &#1576;&#1575;&#1740;&#1587;&#1578;&#1740;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1607; &#1575;&#1740; &#1585;&#1575;
-&#1583;&#1585; &#1587;&#1591;&#1585; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter05-Section04_files/image007.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> نشان دهنده سطر </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=7 height=25
-src="Chapter05-Section04_files/image043.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1575;&#1605; &#1602;&#1585;&#1575;&#1585;
-&#1583;&#1607;&#1740;&#1605; &#1705;&#1607; &#1590;&#1585;&#1740;&#1576; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter05-Section04_files/image008.gif' %}"></span><span lang=FA
+                                                                                            style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>ام است و
+اعمال انجام شده بر روی </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=17 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image007.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> اعمالی است که در هر مرحله بر روی ماتریس افزوده قبلی انجام شده و
+حاصل در ماتریس افزوده بعدی قرار داده شده است و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=76 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image009.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> .</span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>برای مثال </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:9.0pt'><img width=73 height=35
+                                  src="{% static 'images/Chapter05-Section04_files/image010.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> در مرحله اول یعنی </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:9.0pt'><img width=8 height=35
+                                  src="{% static 'images/Chapter05-Section04_files/image011.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> سطر اول ماتریس افزوده اولیه را از سطر دوم آن کم کرده و حاصل هر
+عنصر را در جای مناسب خودش در سطر دوم ماتریس افزوده مرحله دوم قرار داده ایم .</span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>اینک دستگاه
+مثلثی شکل حاصل را داریم:</span></p>
+
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
+unicode-bidi:embed'><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=195 height=25 src="{% static 'images/Chapter05-Section04_files/image012.gif' %}"></span></p>
+
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
+unicode-bidi:embed'><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=211 height=34 src="{% static 'images/Chapter05-Section04_files/image013.gif' %}"></span></p>
+
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
+unicode-bidi:embed'><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=197 height=34 src="{% static 'images/Chapter05-Section04_files/image014.gif' %}"></span></p>
+
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
+unicode-bidi:embed'><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=186 height=34 src="{% static 'images/Chapter05-Section04_files/image015.gif' %}"></span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>این دستگاه با
+روند « جایگذاری از پایین» حل می شود. یعنی مقدار </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=18 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image016.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> از معادله چهارم محاسبه شده و سپس با استفاده از آن در معادله
+سوم، مقدار </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=18 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image017.gif' %}></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و به همین ترتیب </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=43 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image018.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  به دست می آید. این روند را جایگذاری از پایین یا رو به بالا، <br>
+می نامند. نتایج عبارتند از  </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=195 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image019.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=52 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image020.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> .</span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>همانطور که
+دیدیم در روش حذفی گاوس در هر مرحله از یک عنصر خاص استفاده می شود که آن را «
+محور» می نامیم و به کمک این محور همه عناصر زیر آن، در ستونی که قرار دارد، صفر
+می شوند. اولین محور در محل </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=26 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image021.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> از اولین ماتریس تغییر یافته واقع شده و بقیه نیز به همین ترتیب
+جای می گیرند. همه محورها بر روی قطر ماتریس نهایی قرار می گیرند. </span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&nbsp;</span>
+    </p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><b><span lang=FA
+                                                                     style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>محورگیری
+جزیی:</span></b></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>رابطه </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=132 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image022.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> که مربوط به خطای حاصل ضرب دو عدد </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=11 height=25 src="{% static 'images/Chapter05-Section04_files/image023.gif' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> و </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=10 height=25 src="{% static 'images/Chapter05-Section04_files/image024.gif' %}"></span><span
+            dir=RTL></span><span style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> <span lang=FA>می باشد، نشان می دهد که هر گاه </span></span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=11 height=25 src="{% static 'images/Chapter05-Section04_files/image023.gif' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> ویا </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=10 height=25 src="{% static 'images/Chapter05-Section04_files/image024.gif' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> اعدادی بزرگ باشند، خطای حاصل 
+ضرب این دو عدد بزرگ می باشد، حتی اگر </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=18 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image025.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=18 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image026.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> مقادیر کوچکی باشند. اما هرگاه </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=87 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image027.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> مقدار خطای ضرب در حد قابل قبول خواهد بود. لذا بایستی حتی
+الامکان از اعداد تقریبی بزرگ اجتناب  کنیم. برای توضیح مشکلاتی که در این مورد می
+تواند به وجود بیاید. به مثال زیر توجه کنید.</span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>مثال: جواب
+دستگاه زیر را به کمک روش حذفی گاوس و جایگذاری پسرو به دست آورید.</span></p>
+
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
+unicode-bidi:embed'><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=139 height=48 src="{% static 'images/Chapter05-Section04_files/image028.gif' %}"></span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>حل: برای حذف </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=18 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image029.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> از معادله دوم، بایستی معادله اول را در </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=43 height=26
+                                  src="{% static 'images/Chapter05-Section04_files/image030.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ضرب نموده و با معادله دوم جمع کنیم، در این صورت دستگاه عبارت
+است از:</span></p>
+
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
+unicode-bidi:embed'><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=189 height=51 src="{% static 'images/Chapter05-Section04_files/image031.gif' %}"></span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>پس </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=18 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image032.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> برابر است با </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=56 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image033.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> .با قرار دادن </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=18 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image032.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> در معادله اول خواهیم داشت:</span></p>
+
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
+unicode-bidi:embed'><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=193 height=35 src="{% static 'images/Chapter05-Section04_files/image034.gif' %}"></span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>بنابراین جواب
+دستگاه بایستی به صورت </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=45 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image035.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>  باشد.</span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>حال در این
+مثال جای دو معادله را عوض کنیم و دستگاه را مجدداً حل می کنیم. باضرب کردن معادله
+اول در </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=53 height=26
+                                  src="{% static 'images/Chapter05-Section04_files/image036.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و انجام عملیات لازم خواهیم داشت:</span></p>
+
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:21.3pt;
+margin-bottom:10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;
+unicode-bidi:embed'><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=227 height=48 src="{% static 'images/Chapter05-Section04_files/image037.gif' %}"></span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>یعنی </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=53 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image038.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> و با توجه به معادله اول </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=52 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image020.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> .  پس جواب دستگاه به صورت </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=45 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image039.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> می باشد.</span></p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
+                                                                  style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>علت نادرست
+بودن جواب در ابتدا این است که معادله دوم در عدد بزرگی ضرب می شود و میزان خطا را
+به مقدار زیادی افزایش می دهد. اما در مرحله دوم حل، این عدد کوچک است. بنابراین
+برای رفع این مشکل هرگاه بخواهیم ضریب </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:7.0pt'><img width=16 height=27
-src="Chapter05-Section04_files/image040.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1606;&#1587;&#1576;&#1578; &#1576;&#1607;
-&#1587;&#1575;&#1740;&#1585; &#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578;
-&#1576;&#1740;&#1588;&#1578;&#1585;&#1740;&#1606;
-&#1605;&#1602;&#1583;&#1575;&#1585; &#1585;&#1575; &#1575;&#1586;
-&#1606;&#1592;&#1585; &#1602;&#1583;&#1585; &#1605;&#1591;&#1604;&#1602;
-&#1583;&#1575;&#1588;&#1578;&#1607; &#1576;&#1575;&#1588;&#1583;.
-&#1576;&#1607; &#1575;&#1740;&#1606; &#1593;&#1605;&#1604;
-&#1605;&#1581;&#1608;&#1585; &#1711;&#1740;&#1585;&#1740; &#1580;&#1586;&#1740;&#1740;
-&#1711;&#1608;&#1740;&#1606;&#1583;</span><span lang=FA style='font-size:16.0pt;
-line-height:115%;font-family:"Times New Roman",serif'>.</span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> </span></p>
+                                  src="{% static 'images/Chapter05-Section04_files/image040.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> را درسطرهای </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=40 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image041.gif' %}"></span><span dir=LTR
+                                                                                            style='font-size:14.0pt;line-height:115%'> </span><span
+            dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ام تا </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=11 height=25
+                                  src="{% static 'images/Chapter05-Section04_files/image042.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ام صفر کنیم، بایستی معادله ای را در سطر </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=7 height=25 src="{% static 'images/Chapter05-Section04_files/image043.gif' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> ام قرار دهیم که ضریب </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:7.0pt'><img width=16 height=27
+                                  src="{% static 'images/Chapter05-Section04_files/image040.gif' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> نسبت به سایر معادلات بیشترین مقدار را از نظر قدر مطلق داشته
+باشد. به این عمل محور گیری جزیی گویند</span><span lang=FA style='font-size:
+16.0pt;line-height:115%;font-family:"Times New Roman",serif'>.</span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> </span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>&#1605;&#1579;&#1575;&#1604;
-3:</span></p>
+    <br>
+    <!-- کلید مثال ۳ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap5_example3' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۳</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
-margin-bottom:10.0pt;margin-left:21.3pt;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>&#1605;&#1579;&#1575;&#1604;
-4:</span></p>
+    <br>
+    <!-- کلید مثال ۴ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap5_example4' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۴</a>
+        </span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:21.3pt'><span dir=LTR style='font-size:13.0pt;
 line-height:115%'>&nbsp;</span></p>
 

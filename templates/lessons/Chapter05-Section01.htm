@@ -1,105 +1,145 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:#99FF33;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: #99FF33;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        /* List Definitions */
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -107,226 +147,162 @@ ul
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><b><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1605;&#1602;&#1583;&#1605;&#1607;:</span></b></p>
+                                                                    style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>مقدمه:</span></b>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1583;&#1585;
-&#1575;&#1740;&#1606; &#1601;&#1589;&#1604;
-&#1578;&#1593;&#1583;&#1575;&#1583;&#1740; &#1575;&#1586; &#1585;&#1608;&#1588;
-&#1607;&#1575;&#1740; &#1581;&#1604;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607;&#1607;&#1575;&#1740; &#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578;
-&#1582;&#1591;&#1740; &#1585;&#1575; &#1605;&#1608;&#1585;&#1583;
-&#1576;&#1585;&#1585;&#1587;&#1740; &#1602;&#1585;&#1575;&#1585; &#1605;&#1740;
-&#1583;&#1607;&#1740;&#1605;.</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>در این فصل
+تعدادی از روش های حل دستگاههای معادلات خطی را مورد بررسی قرار می دهیم.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-</span><a name="OLE_LINK14"></a><a name="OLE_LINK13"></a><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>دستگاه </span><a
+            name="OLE_LINK14"></a><a name="OLE_LINK13"></a><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=11 height=25
-src="Chapter05-Section01_files/image001.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1593;&#1575;&#1583;&#1604;&#1607; &#1608; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=11 height=25 src="Chapter05-Section01_files/image001.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1605;&#1580;&#1607;&#1608;&#1604;
-&#1586;&#1740;&#1585; &#1585;&#1575; &#1583;&#1585; &#1606;&#1592;&#1585;
-&#1576;&#1711;&#1740;&#1585;&#1740;&#1583;:</span></p>
+                                  src="{% static 'images/Chapter05-Section01_files/image001.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> معادله و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=11 height=25
+                                  src="{% static 'images/Chapter05-Section01_files/image001.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> مجهول زیر را در نظر بگیرید:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=373 height=87 src="Chapter05-Section01_files/image002.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=373 height=87 src="{% static 'images/Chapter05-Section01_files/image002.png' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1740;&#1606;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1585;&#1575; &#1605;&#1740;
-&#1578;&#1608;&#1575;&#1606; &#1576;&#1607; &#1601;&#1585;&#1605;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;&#1740; &#1608; &#1576;&#1607;
-&#1589;&#1608;&#1585;&#1578; &#1586;&#1740;&#1585;
-&#1606;&#1608;&#1588;&#1578;:</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>این دستگاه را
+می توان به فرم ماتریسی و به صورت زیر نوشت:</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=369 height=25 src="Chapter05-Section01_files/image003.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=369 height=25 src="{% static 'images/Chapter05-Section01_files/image003.png' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1705;&#1607;
-&#1583;&#1585; &#1570;&#1606; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=12 height=25
-src="Chapter05-Section01_files/image004.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1590;&#1585;&#1575;&#1740;&#1576;&#1548; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=12 height=25
-src="Chapter05-Section01_files/image005.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1576;&#1585;&#1583;&#1575;&#1585;
-&#1605;&#1580;&#1607;&#1608;&#1604;&#1575;&#1578; &#1608; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=10 height=25 src="Chapter05-Section01_files/image006.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1576;&#1585;&#1583;&#1575;&#1585;
-&#1587;&#1605;&#1578; &#1585;&#1575;&#1587;&#1578;
-&#1606;&#1575;&#1605;&#1740;&#1583;&#1607; &#1605;&#1740; &#1588;&#1608;&#1583;
-&#1608; </span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>که در آن </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=12 height=25 src="{% static 'images/Chapter05-Section01_files/image004.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> ماتریس ضرایب، </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=12 height=25 src="{% static 'images/Chapter05-Section01_files/image005.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> بردار مجهولات و </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=10 height=25 src="{% static 'images/Chapter05-Section01_files/image006.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> بردار سمت راست نامیده می شود و </span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
-width=413 height=90 src="Chapter05-Section01_files/image007.gif"></span></p>
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+            width=413 height=90 src="{% static 'images/Chapter05-Section01_files/image007.png' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1711;&#1585;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578;
-&#1583;&#1575;&#1585;&#1575;&#1740; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>اگر دستگاه
+معادلات دارای </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=16 height=25
-src="Chapter05-Section01_files/image008.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1593;&#1575;&#1583;&#1604;&#1607; &#1608; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=11 height=25 src="Chapter05-Section01_files/image001.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1605;&#1580;&#1607;&#1608;&#1604;
-&#1576;&#1575;&#1588;&#1583; &#1608; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                  src="{% static 'images/Chapter05-Section01_files/image008.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> معادله و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+position:relative;top:5.5pt'><img width=11 height=25
+                                  src="{% static 'images/Chapter05-Section01_files/image001.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> مجهول باشد و </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=51 height=25
-src="Chapter05-Section01_files/image009.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1548; &#1570;&#1606;&#1711;&#1575;&#1607;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578; &#1585;&#1575;
-&#1594;&#1740;&#1585; &#1605;&#1585;&#1576;&#1593;&#1740; &#1605;&#1740;
-&#1711;&#1608;&#1740;&#1740;&#1605; &#1608; &#1583;&#1585;
-&#1589;&#1608;&#1585;&#1578;&#1740; &#1705;&#1607; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=51 height=25 src="Chapter05-Section01_files/image010.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1548;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1585;&#1575;
-&#1605;&#1585;&#1576;&#1593;&#1740; &#1605;&#1740;
-&#1606;&#1575;&#1605;&#1740;&#1605;. &#1583;&#1585; &#1575;&#1740;&#1606;
-&#1601;&#1589;&#1604; &#1605;&#1575; &#1583;&#1585;
-&#1605;&#1608;&#1585;&#1583; &#1581;&#1604; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;&#1607;&#1575;&#1740;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578;
-&#1605;&#1585;&#1576;&#1593;&#1740; &#1576;&#1581;&#1579;
-&#1582;&#1608;&#1575;&#1607;&#1740;&#1605; &#1705;&#1585;&#1583;.</span></p>
+                                  src="{% static 'images/Chapter05-Section01_files/image009.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> ، آنگاه دستگاه معادلات را غیر مربعی می گوییم و در صورتی که </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=51 height=25 src="{% static 'images/Chapter05-Section01_files/image010.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> ، دستگاه را مربعی می نامیم. در
+این فصل ما در مورد حل دستگاههای معادلات مربعی بحث خواهیم کرد.</span></p>
 
-<b><span lang=FA dir=RTL style='font-size:16.0pt;line-height:115%;font-family:
+    <b><span lang=FA dir=RTL style='font-size:16.0pt;line-height:115%;font-family:
 "B Nazanin"'><br clear=all style='page-break-before:always'>
 </span></b>
 
-<p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
+    <p class=MsoNormal dir=LTR style='text-align:left;direction:ltr;unicode-bidi:
 embed'><b><span lang=FA dir=RTL style='font-size:16.0pt;line-height:115%;
 font-family:"B Nazanin"'>&nbsp;</span></b></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><b><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1578;&#1593;&#1585;&#1740;&#1601;:</span></b><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>
-&#1583;&#1585; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607; (2)
-&#1575;&#1711;&#1585;� </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+                                                                    style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>تعریف:</span></b><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> در
+دستگاه (2) اگر  </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=45 height=25
-src="Chapter05-Section01_files/image011.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>&#1548; &#1570;&#1606;&#1711;&#1575;&#1607;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1585;&#1575;
-&#1607;&#1605;&#1711;&#1606; &#1605;&#1740; &#1606;&#1575;&#1605;&#1740;&#1605;
-&#1608; &#1583;&#1585; &#1594;&#1740;&#1585; &#1575;&#1740;&#1606; &#1589;&#1608;&#1585;&#1578;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1606;&#1575;&#1607;&#1605;&#1711;&#1606; &#1575;&#1587;&#1578;.
-&#1576;&#1585;&#1575;&#1740; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607; (2)
-&#1740;&#1705;&#1740; &#1575;&#1586; &#1581;&#1575;&#1604;&#1575;&#1578;
-&#1586;&#1740;&#1585;&#1605;&#1740; &#1578;&#1608;&#1575;&#1606;&#1583;
-&#1575;&#1578;&#1601;&#1575;&#1602; &#1576;&#1740;&#1575;&#1601;&#1578;&#1583;.</span></p>
+                                  src="{% static 'images/Chapter05-Section01_files/image011.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span>، آنگاه دستگاه را همگن می نامیم و در غیر این صورت دستگاه ناهمگن
+است. برای دستگاه (2) یکی از حالات زیرمی تواند اتفاق بیافتد.</span></p>
 
-<p class=MsoListParagraphCxSpFirst dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoListParagraphCxSpFirst dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;text-indent:
 -18.0pt'><span style='font-size:14.0pt;line-height:115%'>1-<span
-style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1711;&#1585;
-</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=45 height=25
-src="Chapter05-Section01_files/image011.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>&#1548; &#1570;&#1606;&#1711;&#1575;&#1607; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=47 height=25 src="Chapter05-Section01_files/image012.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1740;&#1705;
-&#1580;&#1608;&#1575;&#1576; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1575;&#1587;&#1578;.</span></p>
+            style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>اگر </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=45 height=25 src="{% static 'images/Chapter05-Section01_files/image011.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span>، آنگاه </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=47 height=25 src="{% static 'images/Chapter05-Section01_files/image012.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> یک جواب دستگاه است.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoListParagraphCxSpMiddle dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;text-indent:
 -18.0pt'><span style='font-size:14.0pt;line-height:115%'>2-<span
-style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1711;&#1585;
-</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=45 height=25
-src="Chapter05-Section01_files/image013.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1608; </span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>اگر </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=45 height=25 src="{% static 'images/Chapter05-Section01_files/image013.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> و </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=12 height=25 src="{% static 'images/Chapter05-Section01_files/image004.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> ماتریسی معکوس پذیرباشد آنگاه یک
+جواب منحصر بفرد </span><span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:5.5pt'><img width=12 height=25
-src="Chapter05-Section01_files/image004.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;&#1740;
-&#1605;&#1593;&#1705;&#1608;&#1587;
-&#1662;&#1584;&#1740;&#1585;&#1576;&#1575;&#1588;&#1583;
-&#1570;&#1606;&#1711;&#1575;&#1607; &#1740;&#1705; &#1580;&#1608;&#1575;&#1576;
-&#1605;&#1606;&#1581;&#1589;&#1585; &#1576;&#1601;&#1585;&#1583; </span><span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
-top:5.5pt'><img width=12 height=25 src="Chapter05-Section01_files/image005.gif"></span><span
-dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Nazanin"'><span dir=RTL></span>�&#1576;&#1585;&#1575;&#1740;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1605;&#1608;&#1580;&#1608;&#1583;
-&#1575;&#1587;&#1578;.</span></p>
+                                  src="{% static 'images/Chapter05-Section01_files/image005.png' %}"></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
+            dir=RTL></span> برای دستگاه موجود است.</span></p>
 
-<p class=MsoListParagraphCxSpLast dir=RTL style='margin-top:0cm;margin-right:
+    <p class=MsoListParagraphCxSpLast dir=RTL style='margin-top:0cm;margin-right:
 27.15pt;margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify;text-indent:
 -18.0pt'><span style='font-size:14.0pt;line-height:115%'>3-<span
-style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1575;&#1711;&#1585;
-</span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
-position:relative;top:5.5pt'><img width=12 height=25
-src="Chapter05-Section01_files/image004.gif"></span><span dir=RTL></span><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'><span
-dir=RTL></span>�&#1605;&#1593;&#1705;&#1608;&#1587;
-&#1662;&#1584;&#1740;&#1585; &#1606;&#1576;&#1575;&#1588;&#1583;
-&#1570;&#1606;&#1711;&#1575;&#1607; &#1605;&#1605;&#1705;&#1606;
-&#1575;&#1587;&#1578; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607; &#1576;&#1740;
-&#1606;&#1607;&#1575;&#1740;&#1578; &#1580;&#1608;&#1575;&#1576;
-&#1583;&#1575;&#1588;&#1578;&#1607; &#1576;&#1575;&#1588;&#1583; &#1740;&#1575;
-&#1580;&#1608;&#1575;&#1576; &#1606;&#1583;&#1575;&#1588;&#1578;&#1607;
-&#1576;&#1575;&#1588;&#1583;.</span></p>
+            style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span dir=RTL></span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>اگر </span>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;position:relative;
+top:5.5pt'><img width=12 height=25 src="{% static 'images/Chapter05-Section01_files/image004.png' %}"></span><span
+            dir=RTL></span><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Nazanin"'><span dir=RTL></span> معکوس پذیر نباشد آنگاه ممکن است
+دستگاه بی نهایت جواب داشته باشد یا جواب نداشته باشد.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1583;&#1585;
-&#1570;&#1606;&#1575;&#1604;&#1740;&#1586; &#1593;&#1583;&#1583;&#1740;
-&#1583;&#1608; &#1583;&#1587;&#1578;&#1607; &#1585;&#1608;&#1588;
-&#1576;&#1585;&#1575;&#1740; &#1581;&#1604;
-&#1583;&#1587;&#1578;&#1711;&#1575;&#1607;&#1607;&#1575;&#1740;
-&#1605;&#1593;&#1575;&#1583;&#1604;&#1575;&#1578; &#1582;&#1591;&#1740;
-&#1608;&#1580;&#1608;&#1583; &#1583;&#1575;&#1585;&#1583;
-&#1583;&#1587;&#1578;&#1607; &#1575;&#1608;&#1604; &#1576;&#1607;
-&#1585;&#1608;&#1588;&#1607;&#1575;&#1740; &#1605;&#1587;&#1578;&#1602;&#1740;&#1605;
-&#1608; &#1583;&#1587;&#1578;&#1607; &#1583;&#1608;&#1605; &#1576;&#1607;
-&#1585;&#1608;&#1588;&#1607;&#1575;&#1740; &#1594;&#1740;&#1585;
-&#1605;&#1587;&#1578;&#1602;&#1740;&#1605; &#1740;&#1575;
-&#1578;&#1705;&#1585;&#1575;&#1585;&#1740; &#1605;&#1585;&#1587;&#1608;&#1605;&#1606;&#1583;.</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>در آنالیز
+عددی دو دسته روش برای حل دستگاههای معادلات خطی وجود دارد دسته اول به روشهای مستقیم
+و دسته دوم به روشهای غیر مستقیم یا تکراری مرسومند.</span></p>
 
 </div>
 

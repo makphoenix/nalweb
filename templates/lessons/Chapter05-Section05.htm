@@ -1,108 +1,150 @@
+{% load static %}
+
 <html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"B Nazanin";
-	panose-1:0 0 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"B Titr";
-	panose-1:0 0 7 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:36.0pt;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	text-align:right;
-	line-height:115%;
-	direction:rtl;
-	unicode-bidi:embed;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:10.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	border-top:groove;
-	border-left:groove;
-	border-bottom:ridge;
-	border-right:ridge;
-	border-color:#CCCCFF;
-	border-width:9.0pt;
-	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-</style>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+        }
+
+        @font-face {
+            font-family: "B Nazanin";
+            panose-1: 0 0 4 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: "B Titr";
+            panose-1: 0 0 7 0 0 0 0 0 0 0;
+        }
+
+        /* Style Definitions */
+        body {
+            color: black;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            margin-bottom: .0001pt;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+            margin-top: 0cm;
+            margin-right: 36.0pt;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            text-align: right;
+            line-height: 115%;
+            direction: rtl;
+            unicode-bidi: embed;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 10.0pt;
+            line-height: 115%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+            border-top: groove;
+            border-left: groove;
+            border-bottom: ridge;
+            border-right: ridge;
+            border-color: #CCCCFF;
+            border-width: 9.0pt;
+            padding: 24.0pt 24.0pt 24.0pt 24.0pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        /* List Definitions */
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+
+        -->
+    </style>
 
 </head>
 
@@ -110,130 +152,100 @@ ul
 
 <div class=WordSection1 dir=RTL>
 
-<p class=MsoListParagraph dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoListParagraph dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><b><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1585;&#1608;&#1588;
-&#1711;&#1575;&#1608;&#1587;</span></b><b><span lang=FA style='font-size:16.0pt;
-line-height:115%;font-family:"Times New Roman",serif'>-</span></b><b><span
-lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>
-&#1580;&#1585;&#1583;&#1606;</span></b></p>
+                                                                    style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش گاوس</span></b><b><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"Times New Roman",serif'>-</span></b><b><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'> جردن</span></b></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1585;&#1608;&#1588;
-&#1711;&#1575;&#1608;&#1587;</span><span lang=FA style='font-size:16.0pt;
-line-height:115%;font-family:"Times New Roman",serif'>- </span><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1580;&#1585;&#1583;&#1606;
-&#1740;&#1705; &#1585;&#1608;&#1588; &#1581;&#1584;&#1601;&#1740;
-&#1575;&#1587;&#1578; &#1705;&#1607;
-&#1583;&#1585;&#1606;&#1607;&#1575;&#1740;&#1578;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587; &#1590;&#1585;&#1575;&#1740;&#1576;
-&#1585;&#1575; &#1576;&#1607; &#1580;&#1575;&#1740;
-&#1605;&#1575;&#1578;&#1585;&#1740;&#1587; &#1605;&#1579;&#1604;&#1579;&#1740;
-&#1576;&#1607; &#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1602;&#1591;&#1585;&#1740; &#1578;&#1576;&#1583;&#1740;&#1604; &#1605;&#1740;
-&#1705;&#1606;&#1583;. &#1583;&#1585;&#1575;&#1740;&#1606;
-&#1585;&#1608;&#1588; &#1576;&#1575;
-&#1575;&#1587;&#1578;&#1601;&#1575;&#1583;&#1607; &#1575;&#1586;
-&#1587;&#1591;&#1585; &#1605;&#1581;&#1608;&#1585;&#1740;&#1548; &#1607;&#1605;&#1607;
-&#1593;&#1606;&#1575;&#1589;&#1585;&#1740; &#1585;&#1575; &#1705;&#1607;
-&#1583;&#1585; &#1587;&#1578;&#1608;&#1606; &#1605;&#1581;&#1608;&#1585;
-&#1602;&#1585;&#1575;&#1585; &#1583;&#1575;&#1585;&#1606;&#1583;&#1548;
-&#1576;&#1607; &#1594;&#1740;&#1585; &#1575;&#1586; &#1582;&#1608;&#1583;
-&#1605;&#1581;&#1608;&#1585;&#1548; &#1589;&#1601;&#1585;
-&#1705;&#1606;&#1740;&#1605;.</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>روش گاوس</span><span
+            lang=FA style='font-size:16.0pt;line-height:115%;font-family:"Times New Roman",serif'>-
+</span><span lang=FA style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>جردن
+یک روش حذفی است که درنهایت ماتریس ضرایب را به جای ماتریس مثلثی به ماتریس قطری
+تبدیل می کند. دراین روش با استفاده از سطر محوری، همه عناصری را که در ستون محور
+قرار دارند، به غیر از خود محور، صفر کنیم.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1605;&#1579;&#1575;&#1604;
-&#1586;&#1740;&#1585; &#1576;&#1575;
-&#1575;&#1587;&#1578;&#1601;&#1575;&#1583;&#1607; &#1575;&#1586; &#1585;&#1608;&#1588;
-&#1711;&#1575;&#1608;&#1587;- &#1580;&#1585;&#1583;&#1606; &#1608;
-&#1605;&#1581;&#1608;&#1585;&#1711;&#1740;&#1585;&#1740;
-&#1580;&#1586;&#1740;&#1740; &#1575;&#1606;&#1580;&#1575;&#1605;
-&#1588;&#1583;&#1607; &#1575;&#1587;&#1578;.</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>مثال زیر با
+استفاده از روش گاوس- جردن و محورگیری جزیی انجام شده است.</span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
-10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='position:absolute;z-index:251661312;left:0px;margin-left:346px;
-margin-top:4px;width:1px;height:76px'><img width=1 height=76
-src="Chapter05-Section05_files/image001.gif"></span><span style='position:absolute;
-z-index:251660288;left:0px;margin-left:135px;margin-top:4px;width:1px;
-height:76px'><img width=1 height=76 src="Chapter05-Section05_files/image001.gif"></span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'>
+        <span style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:31.5pt'><img width=444 height=94
-src="Chapter05-Section05_files/image002.gif"></span></p>
+                                   src="{% static 'images/Chapter05-Section05_files/image002.gif' %}"></span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
-10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='position:absolute;z-index:251663360;left:0px;margin-left:416px;
-margin-top:2px;width:1px;height:83px'><img width=1 height=83
-src="Chapter05-Section05_files/image003.gif"></span><span style='position:absolute;
-z-index:251662336;left:0px;margin-left:202px;margin-top:3px;width:1px;
-height:83px'><img width=1 height=83 src="Chapter05-Section05_files/image004.gif"></span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'>
+        <span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:34.0pt'><img width=528 height=100
-src="Chapter05-Section05_files/image005.gif"></span></p>
+                                   src="{% static 'images/Chapter05-Section05_files/image004.gif' %}"></span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
-10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='position:absolute;z-index:251665408;left:0px;margin-left:380px;
-margin-top:0px;width:1px;height:83px'><img width=1 height=83
-src="Chapter05-Section05_files/image003.gif"></span><span style='position:absolute;
-z-index:251664384;left:0px;margin-left:185px;margin-top:2px;width:1px;
-height:83px'><img width=1 height=83 src="Chapter05-Section05_files/image004.gif"></span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'>
+        <span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:34.0pt'><img width=476 height=101
-src="Chapter05-Section05_files/image006.gif"></span></p>
+                                   src="{% static 'images/Chapter05-Section05_files/image005.gif' %}"></span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
-10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='position:absolute;z-index:251667456;left:0px;margin-left:356px;
-margin-top:2px;width:1px;height:83px'><img width=1 height=83
-src="Chapter05-Section05_files/image003.gif"></span><span style='position:absolute;
-z-index:251666432;left:0px;margin-left:174px;margin-top:2px;width:1px;
-height:83px'><img width=1 height=83 src="Chapter05-Section05_files/image003.gif"></span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'>
+        <span
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:34.5pt'><img width=451 height=103
-src="Chapter05-Section05_files/image007.gif"></span></p>
+                                   src="{% static 'images/Chapter05-Section05_files/image006.gif' %}"></span></p>
 
-<p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
+    <p class=MsoNormal dir=LTR style='margin-top:0cm;margin-right:1.0cm;margin-bottom:
 10.0pt;margin-left:27.15pt;text-align:justify;direction:ltr;unicode-bidi:embed'><span
-style='position:absolute;z-index:251668480;left:0px;margin-left:167px;
-margin-top:7px;width:1px;height:68px'><img width=1 height=68
-src="Chapter05-Section05_files/image008.gif"></span><span
-style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+            style='font-size:11.0pt;line-height:115%;font-family:"Calibri",sans-serif;
 position:relative;top:33.0pt'><img width=236 height=98
-src="Chapter05-Section05_files/image009.gif"></span></p>
+                                   src="{% static 'images/Chapter05-Section05_files/image008.gif' %}"></span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>&#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1607;&#1605;&#1575;&#1606;&#1740; &#1587;&#1605;&#1578; &#1670;&#1662;
-&#1585;&#1608;&#1588;&#1606; &#1605;&#1740; &#1587;&#1575;&#1586;&#1583;
-&#1705;&#1607; &#1580;&#1608;&#1575;&#1576;&#1607;&#1575;&#1740; &#1583;&#1587;&#1578;&#1711;&#1575;&#1607;
-&#1583;&#1585; &#1605;&#1575;&#1578;&#1585;&#1740;&#1587;
-&#1587;&#1578;&#1608;&#1606;&#1740; &#1587;&#1605;&#1578;
-&#1585;&#1575;&#1587;&#1578; &#1601;&#1585;&#1575;&#1607;&#1605;
-&#1570;&#1605;&#1583;&#1607; &#1575;&#1587;&#1578;.
-&#1576;&#1583;&#1740;&#1607;&#1740; &#1575;&#1587;&#1578; &#1705;&#1607;
-&#1605;&#1581;&#1575;&#1587;&#1576;&#1575;&#1578;&#1740; &#1705;&#1607;
-&#1583;&#1585; &#1575;&#1740;&#1606; &#1585;&#1608;&#1588;
-&#1604;&#1575;&#1586;&#1605; &#1575;&#1587;&#1578;
-&#1576;&#1740;&#1588;&#1578;&#1585; &#1575;&#1587;&#1578;.</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Nazanin"'>ماتریس همانی
+سمت چپ روشن می سازد که جوابهای دستگاه در ماتریس ستونی سمت راست فراهم آمده است.
+بدیهی است که محاسباتی که در این روش لازم است بیشتر است.</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><a name="OLE_LINK12"></a><a
-name="OLE_LINK11"><span lang=FA style='font-size:16.0pt;line-height:115%;
-font-family:"B Titr"'>&#1605;&#1579;&#1575;&#1604; </span></a><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>5:</span></p>
+            name="OLE_LINK11"><span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>مثال </span></a><span lang=FA style='font-size:16.0pt;
+line-height:115%;font-family:"B Titr"'>5:</span></p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm;text-align:justify'><span lang=FA
-style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>&#1605;&#1579;&#1575;&#1604;
-6:</span></p>
+                                                                 style='font-size:16.0pt;line-height:115%;font-family:"B Titr"'>مثال 6:</span>
+    </p>
 
-<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
+
+    <br>
+    <!-- کلید مثال ۵ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap5_example5' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۵</a>
+        </span>
+    </p>
+
+    <br>
+    <!-- کلید مثال ۶ -->
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:26.05pt;
+margin-bottom:10.0pt;margin-left:21.3pt;text-align:right;direction:rtl;
+unicode-bidi:embed'>
+        <span lang=FA style='font-size:16.0pt;line-height:115%;
+font-family:"B Titr"'>
+            <a href="{% url 'chap5_example6' %}" class="btn btn-rounded btn-block btn-outline-warning" role="button">مثال ۶</a>
+        </span>
+    </p>
+
+    <p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:27.15pt;
 margin-bottom:10.0pt;margin-left:1.0cm'><span dir=LTR style='font-size:13.0pt;
 line-height:115%'>&nbsp;</span></p>
 
