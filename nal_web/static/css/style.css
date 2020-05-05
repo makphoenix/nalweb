@@ -11,12 +11,7 @@
 @import url(../css/spinners.css);
 @import url(../css/animate.css);
 
-{
-%
-load
-static
-%
-}
+{% load static %}
 /*
 Template Name: Admin Press Admin
 Author: Themedesigner
@@ -161,7 +156,7 @@ h4,
 h5,
 h6 {
     color: #455a64;
-    font-family: "Poppins", sans-serif;
+    font-family: "Vazir", "Poppins", sans-serif;
     font-weight: 400;
 }
 
@@ -6414,12 +6409,14 @@ Login register and recover password Page
 .login-box {
     width: 400px;
     margin: 0 auto;
+    font-family: Vazir, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
 }
 
 .login-box .footer {
     width: 100%;
     left: 0px;
     right: 0px;
+    font-family: Vazir, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
 }
 
 .login-box .social {
@@ -6455,7 +6452,8 @@ FAQs Page
     margin-top: 10px;
 }
 
-.minimal-faq .card .card-body {
+.minimal-faq .card .card-body  .box-title{
+    font-family: Vazir, Helvetica Neue, Roboto, Arial, Droid Sans, sans-serif;
     padding: 15px 0px;
 }
 

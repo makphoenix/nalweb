@@ -16,21 +16,17 @@ def login(request):
             # messages.success(request, 'You are now logged in')
             return redirect('dashboard')
         else:
-            messages.error(request, 'Invalid credentials!')
+            messages.error(request, 'نام کاربری ویا کلمه عبور اشتباه است')
             return redirect('login')
     else:
-        return render(request, 'account/login.html')
+        return render(request, 'registration/login.html')
 
 
 def logout(request):
     if request.method == 'POST':
         auth.logout(request)
-        messages.success(request, 'You are now logged out')
+        messages.success(request, 'شما با موفقیت از سامانه خارج شدید')
         return redirect('login')
-
-
-def password(request):
-    return render(request, 'account/password.html')
 
 
 def register(request):

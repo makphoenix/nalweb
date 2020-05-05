@@ -1,117 +1,78 @@
+{% extends 'account/base_account.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
+{% block content %}
 
-<head>
+    <section id="wrapper">
+        <div class="login-box card">
+            <div class="card-body">
+                <form class="form-horizontal form-material" id="registerform" action="{% url 'register' %}" method="post">
+                    {% csrf_token %}
+                    <h3 class="box-title m-b-20">سامانه آموزشی محاسبات عددی</h3>
+                    <br>
+                    <h4 class="box-title m-b-20" style="color: indianred">ایجاد حساب کاربری</h4>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>سامانه آموزشی محاسبات عددی</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{% static  'css/rtl/bootstrap.min.css' %}" rel="stylesheet">
-
-    <!-- not use this in ltr -->
-    <link href="{% static 'css/rtl/bootstrap.rtl.css' %}" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="{% static 'css/plugins/metisMenu/metisMenu.min.css' %}" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="{% static 'css/plugins/timeline.css' %}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{% static 'css/rtl/sb-admin-2.css' %}" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="{% static 'css/plugins/morris.css' %}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="{% static 'css/font-awesome/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
-                        <h2 class="panel-title text-center">سامانه آموزشی محاسبات عددی
-                            <img src="{% static 'images/nal.png' %}" alt="NAL" height="50" width="50" class="brand_img">
-                        </h2>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" required="" placeholder="نام" name="FirstName" autofocus>
+                        </div>
                     </div>
-                    <div class="panel-body">
-                        {#    Alerts       #}
-                        {% include 'partials/_alerts.html' %}
-
-                        <form action="{% url 'register' %}" method="post">
-                            {% csrf_token %}
-                            <fieldset>
-                                <div class="form-group text-center">
-                                    <h4>ایجاد حساب کاربری</h4>
-                                </div>
-                                <div class="form-group">
-                                    <label for="First Name">نام:</label>
-                                    <input class="form-control" placeholder="نام" name="FirstName" type="text" autofocus required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Last Name">نام خانوادگی:</label>
-                                    <input class="form-control" placeholder="نام خانوادگی" name="LastName" type="text"  required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">ایمیل:</label>
-                                    <input class="form-control" placeholder="ایمیل" name="email" type="email"  required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="username">نام کاربری:</label>
-                                    <input class="form-control" placeholder="نام کاربری" name="username" type="text"  required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">کلمه عبور:</label>
-                                    <input class="form-control" placeholder="کلمه عبور" name="password" type="password" value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="confirm password">تکرار کلمه عبور:</label>
-                                    <input class="form-control" placeholder="تکرار کلمه عبور" name="ConfirmPassword" type="password" value="" required>
-                                </div>
-                                <br/>
-                                <input type="submit" value="ایجاد حساب" class="btn btn-lg btn-success btn-block">
-                            </fieldset>
-                        </form>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" required="" placeholder="نام خانوادگی" name="LastName" >
+                        </div>
                     </div>
-                    <div class="panel-footer text-center">
-                        <div class="small"><a href="{%  url 'login' %}"><h5>ورود به سامانه</h5></a></div>
+                    <div class="form-group ">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="email" required="" placeholder="ایمیل" name="email">
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" required="" placeholder="نام کاربری" name="username" value="">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="password" required="" placeholder="کلمه عبور" name="password" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="password" required="" placeholder="تکرار کلمه عبور" name="ConfirmPassword" value="">
+                        </div>
+                    </div>
+{#                    <div class="form-group row">#}
+{#                        <div class="col-md-12">#}
+{#                            <div class="checkbox checkbox-success">#}
+{#                                <input id="checkbox-signup" type="checkbox">#}
+{#                                <label for="checkbox-signup"> I agree to all <a href="#">Terms</a></label>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                    <div class="form-group text-center m-t-20">
+                        <div class="col-xs-12">
+                            <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
+                                    type="submit">ثبت نام
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group m-b-0">
+                        <div class="col-sm-12 text-center">
+                            <div>از قبل حساب کاربری دارید؟؟ <a href="{%  url 'login' %}" class="text-info m-l-5">
+                                <b style="color: darkcyan">وارد شوید...</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="{% static 'js/jquery-1.11.0.js' %}"></script>
+    <br>
+    <br>
+    {#    Alerts       #}
+    {% include 'partials/_alerts.html' %}
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="{% static 'js/metisMenu/metisMenu.min.js' %}"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="{% static 'js/sb-admin-2.js' %}"></script>
-
-</body>
-
-</html>
+{% endblock %}
