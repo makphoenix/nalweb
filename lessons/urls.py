@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('intro', views.intro, name='intro'),
+    path('tools', views.tools, name='tools'),
     path('chap1_sec1', views.chap1_sec1, name='chap1_sec1'),
     path('chap1_sec2', views.chap1_sec2, name='chap1_sec2'),
     path('chap1_sec3', views.chap1_sec3, name='chap1_sec3'),

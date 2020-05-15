@@ -8,6 +8,11 @@ def intro(request):
 
 
 @login_required
+def tools(request):
+    return render(request, 'lessons/tools.html')
+
+
+@login_required
 def chap1_sec1(request):
     return render(request, 'lessons/chap1_sec1.html')
 
