@@ -13,6 +13,8 @@
                 <strong>
                     {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROE %}
                         ERROR
+                    {% elif  message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+                        &nbsp;
                     {% else %}
                         {{ message.tags|title }}
                     {% endif %}

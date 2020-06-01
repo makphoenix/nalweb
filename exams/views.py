@@ -97,7 +97,7 @@ def exam01(request):
         if abs(input10_3 - 2) <= 0.1:
             exam01_mark += 0.5
 
-        messages.warning(request, ' نهایی:'+str(exam01_mark))
+        messages.warning(request, 'نمره نهایی: '+str(exam01_mark))
         return render(request, 'exams/exam01_cast.html')
         # return redirect('exam01')
     else:

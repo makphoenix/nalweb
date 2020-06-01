@@ -111,7 +111,7 @@ MEDIA_URL = '/media/'
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
-    messages.WARNING: ' Wa ',
+    # messages.WARNING: ' ',
 }
 
 LOGIN_URL = 'login'
