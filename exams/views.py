@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def exam01(request):
     if request.method == 'POST':
         exam01_mark = 0
@@ -97,8 +98,17 @@ def exam01(request):
         if abs(input10_3 - 2) <= 0.1:
             exam01_mark += 0.5
 
-        messages.warning(request, 'نمره نهایی: '+str(exam01_mark))
+        messages.warning(request, 'نمره نهایی: ' + str(exam01_mark))
         return render(request, 'exams/exam01_cast.html')
         # return redirect('exam01')
     else:
         return render(request, 'exams/exam01_cast.html')
+
+
+@login_required
+def exam02(request):
+    if request.method == 'POST':
+        exam02_mark = 0
+        return render(request, 'exams/exam02_cast.html')
+    else:
+        return render(request, 'exams/exam02_cast.html')
