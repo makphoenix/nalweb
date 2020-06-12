@@ -109,6 +109,14 @@ def exam01(request):
 def exam02(request):
     if request.method == 'POST':
         exam02_mark = 0
+
+        # Question 1
+        input1_1 = float(request.POST['input1_1'])
+
+        if abs(input1_1 - 0.434) <= 0.001:
+            exam02_mark += 2
+
+
         return render(request, 'exams/exam02_cast.html')
     else:
         return render(request, 'exams/exam02_cast.html')
