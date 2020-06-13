@@ -116,6 +116,12 @@ def exam02(request):
         if abs(input1_1 - 0.434) <= 0.001:
             exam02_mark += 2
 
+        # Question 2
+        input2_1 = float(request.POST['input2_1'])
+
+        if input2_1 == 2:
+            exam02_mark += 0.75
+
 
         return render(request, 'exams/exam02_cast.html')
     else:
