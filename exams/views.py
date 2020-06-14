@@ -122,7 +122,16 @@ def exam02(request):
         if input2_1 == 2:
             exam02_mark += 0.75
 
-
         return render(request, 'exams/exam02_cast.html')
     else:
         return render(request, 'exams/exam02_cast.html')
+
+
+@login_required
+def exam03(request):
+    if request.method == 'POST':
+        exam03_mark = 0
+
+        return render(request, 'exams/exam03_cast.html')
+    else:
+        return render(request, 'exams/exam03_cast.html')
