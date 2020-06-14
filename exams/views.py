@@ -135,3 +135,13 @@ def exam03(request):
         return render(request, 'exams/exam03_cast.html')
     else:
         return render(request, 'exams/exam03_cast.html')
+
+
+@login_required
+def exam04(request):
+    if request.method == 'POST':
+        exam04_mark = 0
+
+        return render(request, 'exams/exam04_cast.html')
+    else:
+        return render(request, 'exams/exam04_cast.html')
