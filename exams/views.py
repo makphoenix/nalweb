@@ -165,3 +165,23 @@ def exam06(request):
         return render(request, 'exams/exam06_cast.html')
     else:
         return render(request, 'exams/exam06_cast.html')
+
+
+@login_required
+def exam07(request):
+    if request.method == 'POST':
+        exam07_mark = 0
+
+        return render(request, 'exams/exam07_cast.html')
+    else:
+        return render(request, 'exams/exam07_cast.html')
+
+
+@login_required
+def exam08(request):
+    if request.method == 'POST':
+        exam08_mark = 0
+
+        return render(request, 'exams/exam08_cast.html')
+    else:
+        return render(request, 'exams/exam08_cast.html')
